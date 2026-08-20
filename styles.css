@@ -170,3 +170,11 @@ a:focus-visible,
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* The details grid: the checklist wraps into columns on wide screens. */
+.ticks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 0.25rem 2.5rem;
+}
+.ticks-grid li { margin-bottom: 0.45rem; }

@@ -14,7 +14,7 @@
 - Outside counsel portal (free for firms): guided invoice submission with
   validation before rejection, budget proposal round-trips, timekeeper and
   rate submissions with approvals, shared files and status updates. Each firm
-  sees only its own data — enforced with database row-level security.
+  sees only its own data, enforced with database row-level security.
 - Budgets & accruals: life-of-matter, monthly, quarterly and phase budgets;
   multi-firm allocations; health tracking and threshold alerts.
 - Service of process: structured intake for subpoenas, summonses and formal
