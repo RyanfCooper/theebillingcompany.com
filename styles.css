@@ -146,3 +146,27 @@ a { color: inherit; }
   .site-head { justify-content: center; text-align: center; }
   .site-foot { flex-direction: column; text-align: center; }
 }
+
+/* Accessibility: a visible skip link, real focus rings, calm motion. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0.75rem;
+  background: var(--ink);
+  color: var(--card);
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  z-index: 10;
+}
+.skip-link:focus {
+  left: 0.75rem;
+}
+a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid var(--amber-deep);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
