@@ -178,3 +178,47 @@ a:focus-visible,
   gap: 0.25rem 2.5rem;
 }
 .ticks-grid li { margin-bottom: 0.45rem; }
+
+/* Contact form: compact, centered, same warm chrome as the cards. */
+.contact-form {
+  max-width: 36rem;
+  margin: 0 auto;
+  text-align: left;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form .form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1rem;
+}
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.contact-form input,
+.contact-form textarea {
+  font: inherit;
+  font-weight: 400;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+}
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 3px solid var(--amber-deep);
+  outline-offset: 1px;
+}
+.contact-form .btn { align-self: center; border: 0; cursor: pointer; }
+.contact-form .form-note { text-align: center; margin: 0; }
+.hp { position: absolute; left: -9999px; height: 0; width: 0; border: 0; padding: 0; }
