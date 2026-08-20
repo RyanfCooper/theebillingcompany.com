@@ -1,0 +1,36 @@
+# The eBilling Company
+
+> The eBilling Company builds a modern enterprise legal management (ELM) and
+> legal e-billing platform for in-house legal departments, with a free
+> collaboration portal for outside counsel. Product name: The eBilling System.
+
+## What the platform does
+
+- Matter management: configurable matter types, custom fields and layouts,
+  tasks, key dates with calendar invites, status updates, files, search.
+- Invoice review & e-billing: LEDES and PDF intake, line-level review with
+  billing-guideline enforcement, adjustments and appeals, approval routing,
+  accruals, payments and AP export.
+- Outside counsel portal (free for firms): guided invoice submission with
+  validation before rejection, budget proposal round-trips, timekeeper and
+  rate submissions with approvals, shared files and status updates. Each firm
+  sees only its own data — enforced with database row-level security.
+- Budgets & accruals: life-of-matter, monthly, quarterly and phase budgets;
+  multi-firm allocations; health tracking and threshold alerts.
+- Service of process: structured intake for subpoenas, summonses and formal
+  legal notices, statutory response-window calculation, one-click matter
+  creation with documents and deadlines attached.
+- Reports: dozens of out-of-the-box reports, saved and shared views,
+  subscriptions, CSV export, and an AI ask-to-report builder.
+- Security: PostgreSQL row-level security for tenant/matter/vendor isolation,
+  an append-only audit ledger, SSO (SAML/OIDC) with TOTP two-factor,
+  least-privilege database access.
+- Deployment: multi-tenant cloud, dedicated instance, or on-premises (Helm).
+- AI policy: zero-data-retention models, US-hosted inference, per-tenant
+  provider control. AI assists review; computed figures are computed.
+
+## Links
+
+- Home: https://theebillingcompany.com/
+- Contact: hello@theebillingcompany.com
+- Also reachable via: https://ebillingcompany.com/ and https://theebillingsystem.com/
