@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Security Architecture | The eBilling Company</title>
+  <meta name="description" content="Review the security architecture behind The eBilling System, including database-enforced isolation, identity boundaries, auditability, and human-controlled AI." />
+  <link rel="canonical" href="https://theebillingcompany.com/security.html" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0d3b32" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The eBilling Company" />
+  <meta property="og:title" content="Security by architecture" />
+  <meta property="og:description" content="How The eBilling System protects legal and financial workflows beneath the interface." />
+  <meta property="og:url" content="https://theebillingcompany.com/security.html" />
+  <meta property="og:image" content="https://theebillingcompany.com/social-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-head">
+    <a class="brand" href="/" aria-label="The eBilling Company home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M8 21h8"/><path d="M4 7h16"/><path d="M6 7l-3 6a3 3 0 0 0 6 0z"/><path d="M18 7l-3 6a3 3 0 0 0 6 0z"/></svg></span><span>The <strong>eBilling</strong> Company</span></a>
+    <nav class="site-nav" aria-label="Primary navigation"><a href="/platform.html">Platform</a><a href="/#difference">Why matter-first</a><a href="/security.html" aria-current="page">Security</a><a href="/pilot.html">Pilot</a><a class="btn btn-small btn-outline" href="/#contact">Request a demo</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero security-hero">
+      <p class="breadcrumb"><a href="/">Home</a> / Security</p>
+      <div class="page-hero-grid">
+        <div><p class="eyebrow">Security by architecture</p><h1>Controls that follow the data.</h1><p class="lede">Legal matters contain privileged, personal, and financially material information. The platform is designed so isolation, identity, and accountability do not depend on a page behaving perfectly.</p><div class="hero-cta"><a class="btn btn-primary" href="/#contact">Discuss your requirements</a></div></div>
+        <aside class="page-summary"><strong>Built into the operating model</strong><p>Security boundaries extend through the application, database, vendor portal, and audit history.</p><ul><li>Database-enforced access boundaries</li><li>Separate vendor identity context</li><li>Attributable workflow decisions</li><li>Human control over assisted analysis</li></ul></aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><p class="eyebrow">Core control areas</p><h2>Defense in depth for a multi-party legal workflow.</h2><p>The strongest control is the one applied consistently across every route, job, export, and portal interaction.</p></div>
+      <div class="control-grid">
+        <article><span class="control-number">01 · DATA</span><h3>Database-enforced isolation</h3><p>PostgreSQL row-level security carries tenant, matter, and firm boundaries into the data layer. Request context and privileged service paths remain explicit.</p></article>
+        <article><span class="control-number">02 · IDENTITY</span><h3>Distinct client and vendor access</h3><p>In-house users and outside counsel operate in separate identity contexts. Session, role, and portal-origin controls reduce the chance that one audience crosses into the other.</p></article>
+        <article><span class="control-number">03 · ACCOUNTABILITY</span><h3>Append-only audit history</h3><p>Material workflow and financial events retain attributable history so reviewers can reconstruct what changed, who acted, and why.</p></article>
+        <article><span class="control-number">04 · FINANCIAL INTEGRITY</span><h3>Deterministic money paths</h3><p>Rates, adjustments, allocations, approvals, and monetary calculations use controlled server-side logic and decimal-safe values rather than opaque AI output.</p></article>
+        <article><span class="control-number">05 · FILES</span><h3>Controlled file handling</h3><p>Uploads follow governed storage, access, and validation paths. File status and release policy stay explicit instead of treating every upload as automatically trusted.</p></article>
+        <article><span class="control-number">06 · ASSISTED ANALYSIS</span><h3>Evidence and human judgment</h3><p>AI can surface cited suggestions and help compose analysis. A professional remains responsible for the decision, and computed financial results stay outside the model.</p></article>
+      </div>
+    </section>
+
+    <section class="section subpage-band">
+      <div class="section-heading centered"><p class="eyebrow">A boundary at every layer</p><h2>Identity becomes context. Context constrains the data.</h2></div>
+      <div class="architecture-flow" aria-label="Security control flow">
+        <div><strong>Identity provider</strong><span>Authenticates the person and audience</span></div>
+        <div><strong>Application policy</strong><span>Checks role, action, and workflow state</span></div>
+        <div><strong>Database policy</strong><span>Enforces tenant, matter, and firm scope</span></div>
+        <div><strong>Audit ledger</strong><span>Records material decisions and changes</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="assurance-panel"><div><p class="eyebrow">Assurance without badge theater</p><h2>We will claim certifications when they are earned.</h2></div><p>The product is not currently represented as SOC 2 certified. As a startup, we are prioritizing customer-relevant controls, evidence collection, and a staged assurance roadmap rather than displaying unearned badges. Design partners can request the current control narrative, deployment architecture, and certification roadmap during diligence.</p></div>
+    </section>
+
+    <section class="section pilot-preview">
+      <div><p class="eyebrow">Bring your security team early</p><h2>Map requirements before the pilot.</h2></div>
+      <div><p>Deployment, identity, data residency, retention, integrations, and assurance requirements can change the right implementation path. We surface them before scope is locked.</p><a class="btn btn-outline" href="/#contact">Start a security conversation</a></div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div><a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M8 21h8"/><path d="M4 7h16"/><path d="M6 7l-3 6a3 3 0 0 0 6 0z"/><path d="M18 7l-3 6a3 3 0 0 0 6 0z"/></svg></span><span>The <strong>eBilling</strong> Company</span></a><p>Matter-first enterprise legal management and e-billing.</p></div>
+    <nav aria-label="Footer navigation"><a href="/platform.html">Platform</a><a href="/security.html">Security</a><a href="/pilot.html">Pilot</a><a href="mailto:hello@theebillingcompany.com">Contact</a></nav>
+    <p class="foot-meta">theebillingcompany.com<br />© 2026 The eBilling Company</p>
+  </footer>
+</body>
+</html>

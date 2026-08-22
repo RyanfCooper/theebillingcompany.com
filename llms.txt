@@ -1,36 +1,52 @@
 # The eBilling Company
 
-> The eBilling Company builds a modern enterprise legal management (ELM) and
-> legal e-billing platform for in-house legal departments, with a free
-> collaboration portal for outside counsel. Product name: The eBilling System.
+> The eBilling Company builds The eBilling System, a matter-first enterprise
+> legal management (ELM) and legal e-billing platform for in-house legal
+> departments, with a collaboration portal for outside counsel.
 
-## What the platform does
+## Positioning
 
-- Matter management: configurable matter types, custom fields and layouts,
-  tasks, key dates with calendar invites, status updates, files, search.
-- Invoice review & e-billing: LEDES and PDF intake, line-level review with
-  billing-guideline enforcement, adjustments and appeals, approval routing,
-  accruals, payments and AP export.
-- Outside counsel portal (free for firms): guided invoice submission with
-  validation before rejection, budget proposal round-trips, timekeeper and
-  rate submissions with approvals, shared files and status updates. Each firm
-  sees only its own data, enforced with database row-level security.
-- Budgets & accruals: life-of-matter, monthly, quarterly and phase budgets;
-  multi-firm allocations; health tracking and threshold alerts.
-- Service of process: structured intake for subpoenas, summonses and formal
-  legal notices, statutory response-window calculation, one-click matter
-  creation with documents and deadlines attached.
-- Reports: dozens of out-of-the-box reports, saved and shared views,
-  subscriptions, CSV export, and an AI ask-to-report builder.
-- Security: PostgreSQL row-level security for tenant/matter/vendor isolation,
-  an append-only audit ledger, SSO (SAML/OIDC) with TOTP two-factor,
-  least-privilege database access.
-- Deployment: multi-tenant cloud, dedicated instance, or on-premises (Helm).
-- AI policy: zero-data-retention models, US-hosted inference, per-tenant
-  provider control. AI assists review; computed figures are computed.
+The platform connects the legal operating lifecycle from business request and
+matter creation through outside counsel collaboration, invoice review, budgets,
+accruals, AP handoff, payment status, reconciliation, and reporting. It is
+broader than a spend-only point tool because the matter remains the shared
+system of record for both work and financial activity.
 
-## Links
+## Platform areas
+
+- Intake and matter management: configurable requests, matter fields and
+  layouts, people, tasks, key dates, files, risk, status, and search.
+- Outside counsel collaboration: firm records, portal identities, matter
+  updates, files, timekeepers, rates, budgets, accruals, and invoice submission.
+- Legal e-billing: LEDES and PDF intake, manual entry, duplicate detection,
+  rate and guideline validation, line-level adjustments, approvals, and
+  corrected-invoice history.
+- Budgets and accruals: matter, annual, and phase planning; firm proposal
+  round-trips; close-calendar controls; and accrual collection.
+- Finance loop: allocations, AP-ready batches, ERP-specific mappings, payment
+  status, reconciliation history, and multi-currency support.
+- Reporting and assisted analysis: spend, savings, firm, timekeeper, matter,
+  and workload analysis with drill-down evidence, delivery, and export.
+- Deployment choice: shared cloud, dedicated instance, or on-premises.
+
+## Security statements
+
+- Tenant, matter, and firm access boundaries are enforced with PostgreSQL
+  row-level security in addition to application authorization.
+- In-house and outside counsel users operate in distinct identity contexts.
+- Material workflow and financial events retain append-only audit history.
+- AI may assist review and report composition, but professional decisions and
+  deterministic monetary calculations remain outside the model.
+- The company does not currently represent the product as SOC 2 certified.
+  Certification claims will be published only when earned.
+
+## Pages
 
 - Home: https://theebillingcompany.com/
+- Platform: https://theebillingcompany.com/platform.html
+- Security: https://theebillingcompany.com/security.html
+- Design-partner pilot: https://theebillingcompany.com/pilot.html
 - Contact: hello@theebillingcompany.com
-- Also reachable via: https://ebillingcompany.com/ and https://theebillingsystem.com/
+
+Also reachable through https://ebillingcompany.com/ and
+https://theebillingsystem.com/.

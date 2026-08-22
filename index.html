@@ -3,15 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The eBilling Company · Enterprise Legal Management &amp; Legal e-Billing</title>
-  <meta name="description" content="The eBilling Company builds a modern enterprise legal management (ELM) platform: matter management, LEDES invoice review, vendor collaboration, budgets, service-of-process intake, and AI-assisted reporting, all in one system." />
+  <title>The eBilling Company | Matter-first ELM &amp; Legal Spend Control</title>
+  <meta name="description" content="Run legal work from business request through matter, outside counsel, invoice review, accrual, and payment in one matter-first enterprise legal management platform." />
   <link rel="canonical" href="https://theebillingcompany.com/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#f6f1e7" />
+
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="The eBilling Company" />
-  <meta property="og:title" content="The eBilling Company · Enterprise Legal Management &amp; Legal e-Billing" />
-  <meta property="og:description" content="Matters, invoices, firms, budgets and reports in one modern legal operations platform." />
+  <meta property="og:title" content="Run legal work from first request to final payment" />
+  <meta property="og:description" content="Matter-first enterprise legal management with e-billing, outside counsel collaboration, budgets, accruals, and reporting in one operating system." />
   <meta property="og:url" content="https://theebillingcompany.com/" />
   <meta property="og:image" content="https://theebillingcompany.com/social-card.png" />
   <meta property="og:image:width" content="1200" />
@@ -19,14 +22,14 @@
   <meta property="og:image:alt" content="The eBilling Company: enterprise legal management, minus the drag" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="The eBilling Company" />
-  <meta name="twitter:description" content="Modern enterprise legal management and e-billing for in-house legal teams." />
+  <meta name="twitter:description" content="Matter-first ELM and legal spend control for in-house teams." />
   <meta name="twitter:image" content="https://theebillingcompany.com/social-card.png" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#f7f3ea" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,7 +40,7 @@
         "name": "The eBilling Company",
         "url": "https://theebillingcompany.com/",
         "sameAs": ["https://ebillingcompany.com/", "https://theebillingsystem.com/"],
-        "description": "The eBilling Company builds a modern enterprise legal management and e-billing platform for in-house legal departments."
+        "description": "The eBilling Company builds matter-first enterprise legal management and e-billing software for in-house legal departments."
       },
       {
         "@type": "SoftwareApplication",
@@ -45,8 +48,8 @@
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
         "publisher": { "@id": "https://theebillingcompany.com/#org" },
-        "description": "Enterprise legal management: matter management, LEDES invoice review and guideline enforcement, a collaboration portal for outside counsel, budgets and accruals, service-of-process intake, and AI-assisted reporting.",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "url": "https://theebillingcompany.com/#contact" }
+        "description": "Matter-first enterprise legal management connecting intake, matters, outside counsel, legal invoices, budgets, accruals, payments, and reporting.",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "url": "https://theebillingcompany.com/pilot.html" }
       },
       {
         "@type": "WebSite",
@@ -60,216 +63,273 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-head">
-    <a class="brand" href="/">
-      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M8 21h8"/><path d="M4 7h16"/><path d="M6 7l-3 6a3 3 0 0 0 6 0z"/><path d="M18 7l-3 6a3 3 0 0 0 6 0z"/></svg></span>
+    <a class="brand" href="/" aria-label="The eBilling Company home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M8 21h8"/><path d="M4 7h16"/><path d="M6 7l-3 6a3 3 0 0 0 6 0z"/><path d="M18 7l-3 6a3 3 0 0 0 6 0z"/></svg>
+      </span>
       <span>The <strong>eBilling</strong> Company</span>
     </a>
-    <nav class="site-nav" aria-label="Site">
-      <a href="#platform">Platform</a>
-      <a href="#portal">For law firms</a>
-      <a href="#security">Security</a>
-      <a href="#ai">AI</a>
-      <a class="btn btn-ghost" href="#contact">Request a demo</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="/platform.html">Platform</a>
+      <a href="#difference">Why matter-first</a>
+      <a href="/security.html">Security</a>
+      <a href="/pilot.html">Pilot</a>
+      <a class="btn btn-small btn-outline" href="#contact">Request a demo</a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <p class="eyebrow">Enterprise legal management · Legal e-billing</p>
-      <h1>Legal operations software your department will actually enjoy running.</h1>
-      <p class="lede">
-        Matters, invoices, outside counsel, budgets and reporting, brought together in
-        one modern system for in-house legal teams, with a portal your firms use for free.
-      </p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#contact">Request a demo</a>
-        <a class="btn btn-ghost" href="#platform">See what's inside</a>
-      </div>
-      <p class="hero-note">Built for legal departments that review real invoices, hold real budgets, and answer to real deadlines.</p>
-    </section>
-
-    <section id="platform" class="band">
-      <h2>One platform, the whole workflow</h2>
-      <p class="band-lede">Everything below ships in the product today. No roadmap slides.</p>
-      <div class="grid">
-        <article class="card">
-          <h3>Matter management</h3>
-          <p>Configurable matter types and serials, custom fields and layouts, tasks and key dates with calendar invites, status updates, files, and a full-text search across the department.</p>
-        </article>
-        <article class="card">
-          <h3>Invoice review &amp; e-billing</h3>
-          <p>LEDES and PDF intake, line-level review with guideline enforcement, adjustments and appeals, approval routing with thresholds, accruals, payments and AP export.</p>
-        </article>
-        <article class="card">
-          <h3>Outside counsel collaboration</h3>
-          <p>A free portal where firms submit invoices, propose budgets, upload timekeepers and rates for approval, share status updates, and see exactly what you choose to share. Nothing more.</p>
-        </article>
-        <article class="card">
-          <h3>Budgets &amp; accruals</h3>
-          <p>Life-of-matter, monthly, quarterly and phase budgets; multi-firm allocations with an internal buffer; health tracking against approved, pending and accrued spend; threshold alerts.</p>
-        </article>
-        <article class="card">
-          <h3>Service of process intake</h3>
-          <p>A structured intake ledger for subpoenas, summonses and formal notices. Statutory response windows are calculated for you, and one click opens the matter with the packet and the deadline attached.</p>
-        </article>
-        <article class="card">
-          <h3>Reports &amp; dashboards</h3>
-          <p>Dozens of out-of-the-box reports across spend, savings, timekeepers, matters and workload, plus saved views, subscriptions, CSV export, and a report builder you can simply ask in plain English.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="teams" class="band">
-      <h2>Built for the whole department</h2>
-      <p class="band-lede">One system, four jobs done well.</p>
-      <div class="grid">
-        <article class="card">
-          <h3>General Counsel</h3>
-          <p>The department's posture at a glance: spend against budget, significant matters, the deadlines that matter this month, and a briefing on your own matters when you sign in.</p>
-        </article>
-        <article class="card">
-          <h3>Legal Operations</h3>
-          <p>Own the workflows without filing IT tickets: intake, billing guidelines, approval routing, rate governance, custom fields and layouts, group-level permissions and reporting.</p>
-        </article>
-        <article class="card">
-          <h3>Finance &amp; AP</h3>
-          <p>Accruals that reconcile, multi-currency spend with FX-aware reporting, AP exports and payment tracking that line up with the general ledger.</p>
-        </article>
-        <article class="card">
-          <h3>Paralegals &amp; Docketing</h3>
-          <p>Tasks and key dates with calendar invites, service-of-process intake with statutory clocks, and files where the matter is, not in someone's inbox.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="portal" class="band band-alt">
-      <div class="split">
-        <div>
-          <h2>Your firms will thank you</h2>
-          <p>
-            Most e-billing portals are a chore for the people who use them. Ours gives outside
-            counsel a clean, fast workspace: guided invoice submission that catches problems
-            <em>before</em> they become rejections, budget requests with a real round-trip,
-            timekeeper and rate submissions with templates that match how firms actually work,
-            and a resource center your team curates. Happier firms respond faster, bill cleaner,
-            and save your team the back-and-forth.
-          </p>
-          <ul class="ticks">
-            <li>Invoice validation at the door, so there are fewer rejections and faster payments</li>
-            <li>Rate and timekeeper approvals with a clear status trail</li>
-            <li>Each firm sees only its own slice, enforced in the database rather than the UI</li>
-          </ul>
+    <section class="hero hero-split">
+      <div class="hero-copy">
+        <p class="eyebrow">Matter-first enterprise legal management</p>
+        <h1>Run legal work from first request to final payment.</h1>
+        <p class="lede">
+          The eBilling System connects intake, matters, deadlines, outside counsel,
+          invoices, budgets, accruals and AP in one operating system for in-house legal teams.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">Request a demo</a>
+          <a class="btn btn-outline" href="/platform.html">Explore the platform</a>
         </div>
-        <div>
-          <h2>Run it your way</h2>
-          <p>
-            One codebase, three deployment profiles: multi-tenant cloud, dedicated instance,
-            or on-premises via Helm. Keep your data where your policies say it lives.
-          </p>
-          <ul class="ticks">
-            <li>Cloud, dedicated, or on-prem: the same product in every one</li>
-            <li>SSO with SAML/OIDC and TOTP two-factor</li>
-            <li>Open, documented data model. Your data stays yours</li>
-          </ul>
+        <ul class="proof-list" aria-label="Platform highlights">
+          <li>Matter system of record</li>
+          <li>Free firm portal</li>
+          <li>Cloud, dedicated or on-prem</li>
+        </ul>
+      </div>
+
+      <div class="product-frame" aria-label="Illustration of The eBilling System matter workspace">
+        <div class="product-topbar">
+          <span class="product-logo">E</span>
+          <span class="product-title">Meridian Legal</span>
+          <span class="product-search">Search matters, invoices, firms…</span>
+          <span class="product-avatar">MC</span>
+        </div>
+        <div class="product-body">
+          <div class="product-rail" aria-hidden="true">
+            <span class="rail-active">⌂</span><span>◇</span><span>✓</span><span>▤</span><span>◎</span>
+          </div>
+          <div class="product-canvas">
+            <div class="product-heading">
+              <div>
+                <span class="product-kicker">Matter 2026-0142</span>
+                <strong>Northstar commercial dispute</strong>
+              </div>
+              <span class="status-pill">Active</span>
+            </div>
+            <div class="metric-row">
+              <div><span>Budget</span><strong>$425,000</strong></div>
+              <div><span>Committed</span><strong>$291,840</strong></div>
+              <div><span>Available</span><strong>$133,160</strong></div>
+            </div>
+            <div class="product-grid">
+              <div class="product-panel spend-panel">
+                <div class="panel-head"><strong>Spend position</strong><span>68.7%</span></div>
+                <div class="progress"><span></span></div>
+                <div class="mini-bars" aria-hidden="true">
+                  <i style="height:32%"></i><i style="height:48%"></i><i style="height:42%"></i><i style="height:66%"></i><i style="height:58%"></i><i style="height:82%"></i><i style="height:74%"></i>
+                </div>
+              </div>
+              <div class="product-panel action-panel">
+                <div class="panel-head"><strong>Needs attention</strong><span>3</span></div>
+                <p><b>Invoice 10487</b><small>2 cited billing issues</small></p>
+                <p><b>Budget update</b><small>Waiting on outside counsel</small></p>
+                <p><b>Response due Sep 03</b><small>Owner: Maya Chen</small></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="security" class="band">
-      <h2>Security that holds up in the database</h2>
-      <p class="band-lede">Access control is not a checkbox in our UI. It is enforced where the data lives.</p>
-      <div class="grid grid-3">
-        <article class="card">
-          <h3>Row-level isolation</h3>
-          <p>Tenant, matter, and vendor walls are PostgreSQL row-level security policies. A firm's session physically cannot read another firm's rows, or your internal ones.</p>
-        </article>
-        <article class="card">
-          <h3>Append-only audit</h3>
-          <p>Every material change lands in an append-only audit ledger from the very first migration. Who, what and when, in a ledger that cannot be quietly rewritten.</p>
-        </article>
-        <article class="card">
-          <h3>Least-privilege by default</h3>
-          <p>The application itself runs on a least-privilege database login. Admin paths, approval gates and role policies are enforced server-side, not styled client-side.</p>
-        </article>
+    <section class="signal-band" aria-label="Core platform coverage">
+      <p><strong>One legal operating system</strong></p>
+      <p>Matter management</p>
+      <p>Legal e-billing</p>
+      <p>Outside counsel</p>
+      <p>Budgets &amp; accruals</p>
+      <p>Reports &amp; AI</p>
+    </section>
+
+    <section id="difference" class="section section-split">
+      <div class="section-intro sticky-intro">
+        <p class="eyebrow">Why matter-first</p>
+        <h2>Spend management is one chapter. We connect the whole story.</h2>
+        <p>
+          Point tools become useful when an invoice arrives. Legal work starts much earlier.
+          The eBilling System keeps the request, matter, people, work, budget and bill connected,
+          so the department can act before spend becomes a surprise.
+        </p>
+        <a class="text-link" href="/platform.html">See every platform capability <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="comparison" role="table" aria-label="Spend-only tools compared with The eBilling System">
+        <div class="comparison-head" role="row">
+          <span role="columnheader">Spend-only tool</span>
+          <strong role="columnheader">The eBilling System</strong>
+        </div>
+        <div class="comparison-row" role="row">
+          <span role="cell">Starts when the invoice arrives</span>
+          <strong role="cell">Starts with the legal request and matter</strong>
+        </div>
+        <div class="comparison-row" role="row">
+          <span role="cell">Analyzes outside counsel spend</span>
+          <strong role="cell">Connects work, deadlines, firms, budgets and spend</strong>
+        </div>
+        <div class="comparison-row" role="row">
+          <span role="cell">Collects invoices from firms</span>
+          <strong role="cell">Gives firms a complete collaboration workspace</strong>
+        </div>
+        <div class="comparison-row" role="row">
+          <span role="cell">Ends at approval or export</span>
+          <strong role="cell">Continues through AP, payment and reconciliation</strong>
+        </div>
       </div>
     </section>
 
-    <section id="details" class="band">
-      <h2>The details are the product</h2>
-      <p class="band-lede">The unglamorous capabilities that decide whether a system holds up in month six.</p>
-      <ul class="ticks ticks-grid">
-        <li>Approval routing with amount thresholds</li>
-        <li>Billing-guideline enforcement per firm</li>
-        <li>Timekeeper and rate approvals with a full trail</li>
-        <li>Accrual round-trips with your firms</li>
-        <li>Multi-currency invoices with FX-aware reporting</li>
-        <li>Saved views, report subscriptions and CSV export</li>
-        <li>Global search across matters, invoices, firms and contacts</li>
-        <li>Key dates with real calendar invites</li>
-        <li>Diversity reporting from anonymized firm aggregates</li>
-        <li>Custom fields, layouts and conditional forms</li>
-        <li>Group-level navigation and permission policies</li>
-        <li>An audit trail from the first day, not an add-on</li>
-      </ul>
+    <section class="section workflow-section">
+      <div class="section-heading centered">
+        <p class="eyebrow">One connected workflow</p>
+        <h2>Control the work before you count the spend.</h2>
+        <p>Every handoff stays attached to the same matter and audit history.</p>
+      </div>
+      <ol class="workflow">
+        <li><span class="step-number">01</span><h3>Intake</h3><p>Capture business requests, service of process and required context in structured forms.</p></li>
+        <li><span class="step-number">02</span><h3>Operate</h3><p>Open the matter, assign people, track tasks, key dates, files, risks and status.</p></li>
+        <li><span class="step-number">03</span><h3>Collaborate</h3><p>Engage firms, approve timekeepers and rates, request budgets and collect updates.</p></li>
+        <li><span class="step-number">04</span><h3>Control spend</h3><p>Validate invoices, apply guidelines, review cited issues, allocate and approve.</p></li>
+        <li><span class="step-number">05</span><h3>Close the loop</h3><p>Send clean data to AP, track payment, reconcile accruals and report the outcome.</p></li>
+      </ol>
     </section>
 
-    <section id="ai" class="band band-alt">
-      <h2>AI where it earns its keep</h2>
-      <p class="band-lede">
-        Ask a question, get a runnable report. Get a briefing on your own matters when you sign in.
-        Draft invoices extracted from PDFs for a human to confirm. AI in this product assists the
-        professional. It never replaces the review, and computed figures stay computed, not generated.
-      </p>
-      <p class="ai-note">Zero-data-retention model policy, US-hosted inference, and per-tenant provider control.</p>
+    <section class="section platform-preview">
+      <div class="section-heading">
+        <p class="eyebrow">Depth where it matters</p>
+        <h2>Built for legal operations, not adapted to it.</h2>
+      </div>
+      <div class="bento-grid">
+        <article class="bento bento-wide matter-card">
+          <span class="card-label">System of record</span>
+          <h3>Every matter carries its own operating context.</h3>
+          <p>Custom fields and layouts, people, firms, tasks, dates, files, budgets, invoices and history stay together and searchable.</p>
+          <div class="matter-tags" aria-hidden="true"><span>Overview</span><span>People</span><span>Tasks</span><span>Key dates</span><span>Budget</span><span>Invoices</span></div>
+        </article>
+        <article class="bento spend-card">
+          <span class="card-label">Spend control</span>
+          <h3>Review the bill with the matter beside it.</h3>
+          <p>Guidelines, rates, budget position, accruals, cited flags and line-level adjustments appear in one reviewer workspace.</p>
+          <div class="invoice-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="bento portal-card">
+          <span class="card-label">Outside counsel portal</span>
+          <h3>Fix problems before they reach your team.</h3>
+          <p>Firms submit LEDES or PDFs, confirm extracted data, correct validation findings, propose budgets and manage rates themselves.</p>
+          <div class="portal-status" aria-hidden="true"><span>Received</span><span>Checking</span><strong>Ready</strong></div>
+        </article>
+        <article class="bento report-card">
+          <span class="card-label">Reporting &amp; AI</span>
+          <h3>Ask a business question. Keep the evidence.</h3>
+          <p>Build reports in plain English, drill into the underlying rows and keep computed money deterministic.</p>
+          <div class="ask-box" aria-hidden="true">Show savings by firm this quarter <span>↗</span></div>
+        </article>
+        <article class="bento deployment-card">
+          <span class="card-label">Deployment choice</span>
+          <h3>Cloud, dedicated or on-prem.</h3>
+          <p>One containerized product and one data model, deployed to match your security and residency requirements.</p>
+          <div class="deploy-options" aria-hidden="true"><span>Cloud</span><span>Dedicated</span><span>On-prem</span></div>
+        </article>
+      </div>
+      <p class="section-action"><a class="btn btn-outline" href="/platform.html">Explore the full platform</a></p>
     </section>
 
-    <section id="contact" class="band cta-band">
-      <h2>See it on your own matters</h2>
-      <p>We'll walk you through the platform and set up a pilot with your data.</p>
+    <section class="section firm-section">
+      <div class="firm-panel">
+        <div>
+          <p class="eyebrow eyebrow-light">Shift-left outside counsel collaboration</p>
+          <h2>A firm portal designed to reduce cleanup, not relocate it.</h2>
+          <p>Firms see the exact finding, correct the source, and resubmit before bad data reaches the client ledger. The same workspace handles rates, budgets, accruals, files and matter updates.</p>
+          <ul class="check-list light-list">
+            <li>LEDES, PDF and manual invoice submission</li>
+            <li>Firm-side validation and corrected-invoice history</li>
+            <li>Timekeeper, rate, budget and accrual round-trips</li>
+            <li>Database-enforced firm and client boundaries</li>
+          </ul>
+        </div>
+        <div class="firm-proof" aria-label="Illustration of a firm invoice submission check">
+          <div class="firm-proof-head"><span>Invoice INV-10487</span><strong>Review before submit</strong></div>
+          <div class="proof-row good"><span>✓</span><p><b>Matter matched</b><small>Northstar commercial dispute</small></p></div>
+          <div class="proof-row good"><span>✓</span><p><b>Approved timekeepers</b><small>12 of 12 recognized</small></p></div>
+          <div class="proof-row alert"><span>!</span><p><b>One rate needs attention</b><small>Correct the line or add context</small></p></div>
+          <button type="button" disabled>Submit when ready</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section security-preview">
+      <div class="section-intro">
+        <p class="eyebrow">Security by architecture</p>
+        <h2>Legal and financial data deserve controls beneath the interface.</h2>
+        <p>Tenant, matter and firm boundaries are enforced in PostgreSQL row-level security. Material changes enter an append-only audit ledger. Vendor identities use a separate realm, and sensitive actions remain server-side and attributable.</p>
+        <a class="text-link" href="/security.html">Read the security architecture <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="security-points">
+        <article><span>01</span><h3>Database-enforced isolation</h3><p>Every access path inherits the same tenant, matter and vendor walls.</p></article>
+        <article><span>02</span><h3>Append-only accountability</h3><p>Financial and workflow decisions retain who, what, when and why.</p></article>
+        <article><span>03</span><h3>Human-controlled AI</h3><p>Cited suggestions support professional review; they do not make the decision.</p></article>
+      </div>
+    </section>
+
+    <section class="section pilot-preview">
+      <div><p class="eyebrow">A focused path to proof</p><h2>Start with one workflow. Measure what changes.</h2></div>
+      <div><p>A design-partner pilot uses representative matters, firms and invoices to prove data quality, review time, firm turnaround and AP readiness before a broader rollout.</p><a class="btn btn-outline" href="/pilot.html">See the pilot approach</a></div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-copy">
+        <p class="eyebrow">See it in your operating model</p>
+        <h2>Bring us the workflow that creates the most drag.</h2>
+        <p>We will show how the platform handles it from intake through reporting, then scope a controlled pilot around your priorities and data.</p>
+        <p class="contact-email">Prefer email?<br /><a href="mailto:hello@theebillingcompany.com">hello@theebillingcompany.com</a></p>
+      </div>
       <form class="contact-form" action="https://formsubmit.co/hello@theebillingcompany.com" method="POST">
         <input type="hidden" name="_subject" value="Demo request from theebillingcompany.com" />
         <input type="hidden" name="_next" value="https://theebillingcompany.com/thanks.html" />
         <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="form-row">
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" required autocomplete="name" />
-          </label>
-          <label>
-            <span>Work email</span>
-            <input type="email" name="email" required autocomplete="email" />
-          </label>
+          <label><span>Name</span><input type="text" name="name" required autocomplete="name" /></label>
+          <label><span>Work email</span><input type="email" name="email" required autocomplete="email" /></label>
         </div>
-        <div class="form-row">
-          <label>
-            <span>Company</span>
-            <input type="text" name="company" autocomplete="organization" />
-          </label>
-          <label>
-            <span>Team size (optional)</span>
-            <input type="text" name="team_size" />
-          </label>
-        </div>
+        <label><span>Company</span><input type="text" name="company" autocomplete="organization" /></label>
         <label>
-          <span>What would you like to see?</span>
-          <textarea name="message" rows="4"></textarea>
+          <span>What is the first problem you want to solve?</span>
+          <select name="priority">
+            <option value="">Choose one</option>
+            <option>Matter intake and management</option>
+            <option>Invoice review and legal spend</option>
+            <option>Outside counsel collaboration</option>
+            <option>Budgets and accruals</option>
+            <option>Reporting and visibility</option>
+            <option>Replacing a legacy ELM</option>
+          </select>
         </label>
+        <label><span>Anything we should know?</span><textarea name="message" rows="4"></textarea></label>
         <button class="btn btn-primary btn-big" type="submit">Request a demo</button>
-        <p class="muted form-note">Prefer email? Write to <a href="mailto:hello@theebillingcompany.com">hello@theebillingcompany.com</a>.</p>
+        <p class="form-note">We will only use these details to respond to your request.</p>
       </form>
     </section>
   </main>
 
   <footer class="site-foot">
     <div>
-      <span class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M8 21h8"/><path d="M4 7h16"/><path d="M6 7l-3 6a3 3 0 0 0 6 0z"/><path d="M18 7l-3 6a3 3 0 0 0 6 0z"/></svg></span> The <strong>eBilling</strong> Company</span>
-      <p class="muted">Enterprise legal management &amp; e-billing.</p>
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M8 21h8"/><path d="M4 7h16"/><path d="M6 7l-3 6a3 3 0 0 0 6 0z"/><path d="M18 7l-3 6a3 3 0 0 0 6 0z"/></svg></span>
+        <span>The <strong>eBilling</strong> Company</span>
+      </a>
+      <p>Matter-first enterprise legal management and e-billing.</p>
     </div>
-    <p class="muted">
-      theebillingcompany.com · ebillingcompany.com · theebillingsystem.com<br />
-      © 2026 The eBilling Company. All rights reserved.
-    </p>
+    <nav aria-label="Footer navigation"><a href="/platform.html">Platform</a><a href="/security.html">Security</a><a href="/pilot.html">Pilot</a><a href="mailto:hello@theebillingcompany.com">Contact</a></nav>
+    <p class="foot-meta">theebillingcompany.com<br />© 2026 The eBilling Company</p>
   </footer>
 </body>
 </html>
