@@ -14,7 +14,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="The eBilling Company" />
   <meta property="og:title" content="Run legal work from first request to final payment" />
-  <meta property="og:description" content="Matter-first enterprise legal management with e-billing, outside counsel collaboration, budgets, accruals, and reporting in one operating system." />
+  <meta property="og:description" content="Matter-first enterprise legal management with e-billing, outside counsel collaboration, budgets, accruals, and reporting in one ELM system." />
   <meta property="og:url" content="https://theebillingcompany.com/" />
   <meta property="og:image" content="https://theebillingcompany.com/social-card.png" />
   <meta property="og:image:width" content="1200" />
@@ -49,7 +49,7 @@
         "operatingSystem": "Web",
         "publisher": { "@id": "https://theebillingcompany.com/#org" },
         "description": "Matter-first enterprise legal management connecting intake, matters, outside counsel, legal invoices, budgets, accruals, payments, and reporting.",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "url": "https://theebillingcompany.com/pilot.html" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "url": "https://theebillingcompany.com/sandbox.html" }
       },
       {
         "@type": "WebSite",
@@ -73,9 +73,8 @@
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="/platform.html">Platform</a>
-      <a href="#difference">Why matter-first</a>
       <a href="/security.html">Security</a>
-      <a href="/pilot.html">Pilot</a>
+      <a href="/sandbox.html">Sandbox</a>
       <a class="btn btn-small btn-outline" href="#contact">Request a demo</a>
     </nav>
   </header>
@@ -87,7 +86,7 @@
         <h1>Run legal work from first request to final payment.</h1>
         <p class="lede">
           The eBilling System connects intake, matters, deadlines, outside counsel,
-          invoices, budgets, accruals and AP in one operating system for in-house legal teams.
+          invoices, budgets, accruals and AP in one ELM platform for in-house legal teams.
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#contact">Request a demo</a>
@@ -145,7 +144,7 @@
     </section>
 
     <section class="signal-band" aria-label="Core platform coverage">
-      <a href="/platform.html"><strong>One legal operating system</strong></a>
+      <a href="/platform.html"><strong>Enterprise Legal Management System</strong></a>
       <a href="/platform.html#matter-management">Matter management</a>
       <a href="/platform.html#legal-ebilling">Legal e-billing</a>
       <a href="/platform.html#outside-counsel">Outside counsel</a>
@@ -219,7 +218,11 @@
           <span class="card-label">Spend control</span>
           <h3>Review the bill with the matter beside it.</h3>
           <p>Guidelines, rates, budget position, accruals, cited flags and line-level adjustments appear in one reviewer workspace.</p>
-          <div class="invoice-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="invoice-review-mini" aria-hidden="true">
+            <div class="invoice-mini-head"><span>Line item</span><span>Rate</span><span>Review</span></div>
+            <div class="invoice-mini-row"><span>Research</span><span>$480</span><strong>Approved</strong></div>
+            <div class="invoice-mini-row flagged"><span>Case strategy</span><span>$625</span><strong>Rate check</strong></div>
+          </div>
         </article>
         <article class="bento portal-card">
           <span class="card-label">Outside counsel portal</span>
@@ -246,7 +249,7 @@
     <section class="section firm-section">
       <div class="firm-panel">
         <div>
-          <p class="eyebrow eyebrow-light">Shift-left outside counsel collaboration</p>
+          <p class="eyebrow eyebrow-light">Outside counsel collaboration</p>
           <h2>A firm portal designed to reduce cleanup, not relocate it.</h2>
           <p>Firms see the exact finding, correct the source, and resubmit before bad data reaches the client ledger. The same workspace handles rates, budgets, accruals, files and matter updates.</p>
           <ul class="check-list light-list">
@@ -280,16 +283,16 @@
       </div>
     </section>
 
-    <section class="section pilot-preview">
-      <div><p class="eyebrow">A focused path to proof</p><h2>Start with one workflow. Measure what changes.</h2></div>
-      <div><p>A design-partner pilot uses representative matters, firms and invoices to prove data quality, review time, firm turnaround and AP readiness before a broader rollout.</p><a class="btn btn-outline" href="/pilot.html">See the pilot approach</a></div>
+    <section class="section sandbox-preview">
+      <div><p class="eyebrow">Hands-on product sandbox</p><h2>Take the system for a test drive.</h2></div>
+      <div><p>Explore realistic matters, firms, invoices, budgets and reports using synthetic data. No production data, customer integrations or full implementation project required.</p><a class="btn btn-outline" href="/sandbox.html">Explore sandbox access</a></div>
     </section>
 
     <section id="contact" class="section contact-section">
       <div class="contact-copy">
         <p class="eyebrow">See it in your operating model</p>
         <h2>Bring us the workflow that creates the most drag.</h2>
-        <p>We will show how the platform handles it from intake through reporting, then scope a controlled pilot around your priorities and data.</p>
+        <p>We will show how the platform handles it from intake through reporting, then help your team explore the product in a sandbox using synthetic data.</p>
         <p class="contact-email">Prefer email?<br /><a href="mailto:hello@theebillingcompany.com">hello@theebillingcompany.com</a></p>
       </div>
       <form class="contact-form" action="https://formsubmit.co/hello@theebillingcompany.com" method="POST">
@@ -311,6 +314,7 @@
             <option>Budgets and accruals</option>
             <option>Reporting and visibility</option>
             <option>Replacing a legacy ELM</option>
+            <option>Sandbox access and product evaluation</option>
           </select>
         </label>
         <label><span>Anything we should know?</span><textarea name="message" rows="4"></textarea></label>
@@ -328,7 +332,7 @@
       </a>
       <p>Matter-first enterprise legal management and e-billing.</p>
     </div>
-    <nav aria-label="Footer navigation"><a href="/platform.html">Platform</a><a href="/security.html">Security</a><a href="/pilot.html">Pilot</a><a href="mailto:hello@theebillingcompany.com">Contact</a></nav>
+    <nav aria-label="Footer navigation"><a href="/platform.html">Platform</a><a href="/security.html">Security</a><a href="/sandbox.html">Sandbox</a><a href="mailto:hello@theebillingcompany.com">Contact</a></nav>
     <p class="foot-meta">theebillingcompany.com<br />© 2026 The eBilling Company</p>
   </footer>
 </body>

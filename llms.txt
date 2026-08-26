@@ -29,6 +29,14 @@ system of record for both work and financial activity.
   and workload analysis with drill-down evidence, delivery, and export.
 - Deployment choice: shared cloud, dedicated instance, or on-premises.
 
+## Product evaluation
+
+Prospective customers can request access to a sandbox populated with synthetic
+matters, firms, invoices, budgets, accruals, and reports. The sandbox supports
+hands-on product evaluation without customer-data migration, production-system
+connections, or a full implementation project. It must not be used for
+privileged, confidential, personal, or production data.
+
 ## Security statements
 
 - Tenant, matter, and firm access boundaries are enforced with PostgreSQL
@@ -45,7 +53,7 @@ system of record for both work and financial activity.
 - Home: https://theebillingcompany.com/
 - Platform: https://theebillingcompany.com/platform.html
 - Security: https://theebillingcompany.com/security.html
-- Design-partner pilot: https://theebillingcompany.com/pilot.html
+- Product sandbox: https://theebillingcompany.com/sandbox.html
 - Contact: hello@theebillingcompany.com
 
 Also reachable through https://ebillingcompany.com/ and
