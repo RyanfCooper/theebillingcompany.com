@@ -14,20 +14,34 @@ system of record for both work and financial activity.
 
 ## Platform areas
 
-- Intake and matter management: configurable requests, matter fields and
-  layouts, people, tasks, key dates, files, risk, status, and search.
-- Outside counsel collaboration: firm records, portal identities, matter
-  updates, files, timekeepers, rates, budgets, accruals, and invoice submission.
-- Legal e-billing: LEDES and PDF intake, manual entry, duplicate detection,
-  rate and guideline validation, line-level adjustments, approvals, and
-  corrected-invoice history.
-- Budgets and accruals: matter, annual, and phase planning; firm proposal
-  round-trips; close-calendar controls; and accrual collection.
-- Finance loop: allocations, AP-ready batches, ERP-specific mappings, payment
-  status, reconciliation history, and multi-currency support.
-- Reporting and assisted analysis: spend, savings, firm, timekeeper, matter,
-  and workload analysis with drill-down evidence, delivery, and export.
-- Deployment choice: shared cloud, dedicated instance, or on-premises.
+- Intake and matter management: configurable requests, governed fields and
+  managed lists, pending phase, required closure details, people, tasks, files,
+  favorites, recents, and matter access controls.
+- Outside counsel collaboration: firm and office billing records, separate
+  portal identities, client grants, matter updates, timekeepers, rate requests,
+  budgets, accruals, invoice submission, and post-matter firm scorecards.
+- Legal e-billing: LEDES, PDF, and manual intake; duplicate and guideline
+  validation; line adjustments; threshold-based escalation; shadow and credit
+  invoice types; and correction history.
+- Budgets and accruals: matter and phase planning, alternative fee arrangements,
+  practice-group and entity rollups, fiscal calendars, burn views, firm proposals,
+  accrual collection, and close controls.
+- Finance loop: purchase-order requests and decision callbacks, invoice-to-PO
+  balances, allocations, AP batches, per-system office billing identities,
+  payment reconciliation, and managed currency rates.
+- Reporting: a self-service cross-object builder with live previews, charts,
+  text-to-report assistance, private/role/workspace sharing, scheduled email,
+  and Excel/CSV/PDF exports; modular dashboards and cited review flags.
+- Documents: Word templates with merge tags and test merges, record-side
+  generation, PDF conversion, and iManage/NetDocuments/SharePoint adapters.
+  External DMS connections require validation against the customer's tenant.
+- Administration: six-entity CSV import with mapping, validation and error
+  files; cascading lists; email rules and delivery logs; login announcements;
+  user profiles, preferences, and delegation.
+
+General-purpose Donna voice/chat, passkey enrollment, and standalone internal
+time-entry capture are roadmap items, not represented here as shipped features.
+Deployment and external integration requirements are agreed during evaluation.
 
 ## Product evaluation
 
