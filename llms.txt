@@ -26,7 +26,8 @@ system of record for both work and financial activity.
 - Budgets and accruals: matter and phase planning, alternative fee arrangements,
   practice-group and entity rollups, fiscal calendars, burn views, firm proposals,
   accrual collection, and close controls.
-- Finance loop: purchase-order requests and decision callbacks, invoice-to-PO
+- Finance loop: simple purchase-order requests and internal approvals with
+  automatic PO numbers; optional accounting decision callbacks; invoice-to-PO
   balances, allocations, AP batches, per-system office billing identities,
   payment reconciliation, and managed currency rates.
 - Reporting: a self-service cross-object builder with live previews, charts,
