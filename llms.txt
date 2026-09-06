@@ -19,7 +19,9 @@ system of record for both work and financial activity.
   favorites, recents, and matter access controls.
 - Outside counsel collaboration: firm and office billing records, separate
   portal identities, client grants, matter updates, timekeepers, rate requests,
-  budgets, accruals, invoice submission, and post-matter firm scorecards.
+  budgets, accruals, invoice submission, and post-matter firm scorecards. Search
+  and paging cover the complete authorized directories, with current rate dates
+  and submission-batch counts.
 - Legal e-billing: LEDES, PDF, and manual intake; duplicate and guideline
   validation; line adjustments; threshold-based escalation; shadow and credit
   invoice types; and correction history.
@@ -29,7 +31,8 @@ system of record for both work and financial activity.
 - Finance loop: simple purchase-order requests and internal approvals with
   automatic PO numbers; optional accounting decision callbacks; invoice-to-PO
   balances, allocations, AP batches, per-system office billing identities,
-  payment reconciliation, and managed currency rates.
+  payment reconciliation, and managed currency rates. Immutable AP export
+  snapshots retain delivery attempts and explicit review for uncertain outcomes.
 - Reporting: a self-service cross-object builder with live previews, charts,
   text-to-report assistance, private/role/workspace sharing, scheduled email,
   and Excel/CSV/PDF exports; modular dashboards and cited review flags.
@@ -38,7 +41,8 @@ system of record for both work and financial activity.
   External DMS connections require validation against the customer's tenant.
 - Administration: six-entity CSV import with mapping, validation and error
   files; cascading lists; email rules and delivery logs; login announcements;
-  user profiles, preferences, and delegation.
+  user profiles, preferences, and delegation. Data health checks surface
+  inconsistent records; import previews and outcomes retain audit evidence.
 
 - Internal timekeeping: optional personal Monday-to-Sunday timesheets linked
   to accessible matters or standard activities, with decimal or H:MM entry,
@@ -46,8 +50,12 @@ system of record for both work and financial activity.
   Enabled by an administrator; time entries remain personal and separate
   from outside-counsel invoices and spend.
 
-General-purpose Donna voice/chat and passkey enrollment are roadmap items,
-not represented here as shipped features.
+Donna provides read-only record lookup in the internal application, with current
+access checks, explicit record selection, source links, and deterministic
+financial values. Voice and action-taking remain in development.
+Optional passkeys for local accounts are implemented and can be enabled during
+identity setup. They are not enabled by default; corporate sign-in policies
+remain with the organization’s identity provider.
 Deployment and external integration requirements are agreed during evaluation.
 
 ## Product evaluation
