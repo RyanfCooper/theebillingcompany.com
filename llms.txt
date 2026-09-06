@@ -40,8 +40,14 @@ system of record for both work and financial activity.
   files; cascading lists; email rules and delivery logs; login announcements;
   user profiles, preferences, and delegation.
 
-General-purpose Donna voice/chat, passkey enrollment, and standalone internal
-time-entry capture are roadmap items, not represented here as shipped features.
+- Internal timekeeping: optional personal Monday-to-Sunday timesheets linked
+  to accessible matters or standard activities, with decimal or H:MM entry,
+  private daily notes, automatic row carryover, and save/conflict recovery.
+  Enabled by an administrator; time entries remain personal and separate
+  from outside-counsel invoices and spend.
+
+General-purpose Donna voice/chat and passkey enrollment are roadmap items,
+not represented here as shipped features.
 Deployment and external integration requirements are agreed during evaluation.
 
 ## Product evaluation
