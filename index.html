@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#f7f5ef" />
+  <meta name="theme-color" content="#0d3b30" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="The eBilling Company" />
@@ -62,7 +62,7 @@
   }
   </script>
 </head>
-<body>
+<body class="on-dark">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-head">
@@ -79,9 +79,10 @@
   </header>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero hero-dark" data-hero>
+      <span class="tab tab-tl" aria-hidden="true"></span><span class="tab tab-tr" aria-hidden="true"></span>
       <div class="hero-copy">
-        <p class="eyebrow">Matter-first enterprise legal management</p>
+        <p class="eyebrow eyebrow-light">Matter-first enterprise legal management</p>
         <h1>Run legal work <span class="tone">from first request to final payment.</span></h1>
         <p class="lede">
           The eBilling System connects intake, matters, deadlines, outside counsel,
@@ -89,17 +90,12 @@
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#contact">Request a demo</a>
-          <a class="btn btn-outline" href="/platform.html">Explore the platform</a>
+          <a class="btn btn-ghost" href="#chapters">See how it works</a>
         </div>
-        <ul class="proof-list" aria-label="Platform highlights">
-          <li>Matter system of record</li>
-          <li>Dedicated firm portal</li>
-          <li>Governed configuration</li>
-        </ul>
       </div>
-    </section>
 
     <div class="product-stage">
+      <span class="tab tab-bl" aria-hidden="true"></span><span class="tab tab-br" aria-hidden="true"></span>
       <figure class="window sealed" aria-label="A private preview of The eBilling System">
         <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.theebillingcompany.com</span></div>
         <div class="ghost" aria-hidden="true">
@@ -132,7 +128,11 @@
         <p>21% of a $425,000 matter budget, before a single dollar is approved.</p>
         <div class="fc-meter"><span></span></div>
       </aside>
+      <aside class="ghost-card ghost-a" aria-hidden="true"><span class="fc-tag">Key date</span><strong>Mediation in 3 days</strong><i></i><i class="s"></i></aside>
+      <aside class="ghost-card ghost-b" aria-hidden="true"><span class="fc-tag">Firm portal</span><strong>Accrual returned</strong><i></i><i class="s"></i></aside>
+      <aside class="ghost-card ghost-c" aria-hidden="true"><span class="fc-tag">Intake</span><strong>New request</strong><i></i><i class="s"></i></aside>
     </div>
+    </section>
 
     <section class="signal-band" aria-label="Core platform coverage">
       <a href="/platform.html"><strong>Enterprise Legal Management System</strong></a>
@@ -178,38 +178,99 @@
       </div>
     </section>
 
-    <section class="section workflow-section">
-      <div class="section-heading centered">
-        <p class="eyebrow">One connected workflow</p>
-        <h2>Control the work <span class="tone">before you count the spend.</span></h2>
-        <p>Every handoff stays attached to the same matter and audit history.</p>
+    <section id="chapters" class="chapters-section">
+      <div class="chapters-intro">
+        <p class="eyebrow">One connected system</p>
+        <h2>Every handoff, <span class="tone">one matter record.</span></h2>
       </div>
-      <ol class="workflow">
-        <li><span class="step-number">01</span><h3>Intake</h3><p>Capture business requests, service of process and required context in structured forms.</p></li>
-        <li><span class="step-number">02</span><h3>Operate</h3><p>Open the matter, assign people, track tasks, key dates, files, risks and status.</p></li>
-        <li><span class="step-number">03</span><h3>Collaborate</h3><p>Engage firms, approve timekeepers and rates, request budgets and collect updates.</p></li>
-        <li><span class="step-number">04</span><h3>Control spend</h3><p>Validate invoices, apply guidelines, review cited issues, allocate and approve.</p></li>
-        <li><span class="step-number">05</span><h3>Close the loop</h3><p>Send clean data to AP, track payment, reconcile accruals and report the outcome.</p></li>
-      </ol>
-    </section>
+      <div class="chapters">
+        <nav class="chapter-nav" aria-label="How it works">
+          <a href="#ch-intake" class="on"><small>Intake</small>Capture the request</a>
+          <a href="#ch-matters"><small>Operate</small>Run the matter</a>
+          <a href="#ch-firms"><small>Collaborate</small>Work with firms</a>
+          <a href="#ch-spend"><small>Control</small>Review the spend</a>
+          <a href="#ch-finance"><small>Close</small>Pay, accrue, report</a>
+        </nav>
+        <div class="chapter-list">
 
-    <section class="section platform-preview">
-      <div class="section-heading">
-        <p class="eyebrow">Depth where it matters</p>
-        <h2>Built for legal operations, <span class="tone">not adapted to it.</span></h2>
-      </div>
-      <div class="bento-grid">
-        <article class="bento bento-wide matter-card">
-          <span class="card-label">System of record</span>
-          <h3>Every matter carries its own operating context.</h3>
-          <p>Governed fields, people, firms, tasks, files and financial records stay together, with favorites, recent records and required closure details.</p>
-          <div class="matter-tags" aria-hidden="true"><span>Overview</span><span>People</span><span>Tasks</span><span>Key dates</span><span>Budget</span><span>Invoices</span></div>
-        </article>
-        <article class="bento spend-card">
-          <span class="card-label">Spend control</span>
-          <h3>Review the bill with the matter beside it.</h3>
-          <p>Guidelines, rates, budget rollups, purchase orders and cited flags support review, with configured escalation thresholds and line-level adjustments.</p>
-          <div class="card-shot redacted" aria-hidden="true">
+          <article id="ch-intake" class="chapter" style="--c:#e2f0d0;--c2:#cfe5b6;--ci:#2f6b3a">
+            <div class="chapter-copy">
+              <p class="chapter-kicker">01 · Intake</p>
+              <h3>Capture the request before it becomes an email thread.</h3>
+              <p>Business requests and service of process arrive through structured forms with the context legal needs, then convert into a matter in one step.</p>
+            </div>
+            <div class="iso" aria-hidden="true"><div class="iso-plane cols-4"><span class="chip"><i class="ic-doc"></i><b>Contract review</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Service of process</b><em>Logged</em></span><span class="chip"><i class="ic-doc"></i><b>Employment question</b><em>Triage</em></span><span class="chip"><i class="ic-doc"></i><b>Litigation hold</b><em>Urgent</em></span><span class="chip"><i class="ic-doc"></i><b>NDA request</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Regulatory inquiry</b><em>Triage</em></span><span class="chip"><i class="ic-doc"></i><b>Subpoena received</b><em>Logged</em></span><span class="chip"><i class="ic-doc"></i><b>Vendor dispute</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Board consent</b><em>Converted</em></span><span class="chip"><i class="ic-doc"></i><b>IP clearance</b><em>Triage</em></span><span class="chip"><i class="ic-doc"></i><b>Lease renewal</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Data request</b><em>Urgent</em></span><span class="chip"><i class="ic-doc"></i><b>Contract review</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Service of process</b><em>Logged</em></span><span class="chip"><i class="ic-doc"></i><b>Employment question</b><em>Triage</em></span><span class="chip"><i class="ic-doc"></i><b>Litigation hold</b><em>Urgent</em></span><span class="chip"><i class="ic-doc"></i><b>NDA request</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Regulatory inquiry</b><em>Triage</em></span><span class="chip"><i class="ic-doc"></i><b>Subpoena received</b><em>Logged</em></span><span class="chip"><i class="ic-doc"></i><b>Vendor dispute</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Board consent</b><em>Converted</em></span><span class="chip"><i class="ic-doc"></i><b>IP clearance</b><em>Triage</em></span><span class="chip"><i class="ic-doc"></i><b>Lease renewal</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Data request</b><em>Urgent</em></span></div></div>
+            <div class="strip" aria-hidden="true">
+              <div class="strip-cell">
+                <div class="mini-card">
+                  <div class="mc-top"><span class="pill">New request</span><span class="mono">REQ-■■■</span></div>
+                  <strong>Supplier contract review</strong>
+                  <dl><dt>Business unit</dt><dd><b class="x" style="width:5.5em"></b></dd><dt>Urgency</dt><dd>High</dd><dt>Route to</dt><dd>Commercial legal</dd></dl>
+                  <span class="mc-btn">Convert to matter</span>
+                </div>
+              </div>
+              <div class="strip-cell bubbles">
+                <div class="bubble"><span class="who"><b>Sales</b><i>SR</i></span><p>Can legal review this MSA before Friday?</p></div>
+                <div class="bubble faded"><span class="who"><b>HR</b><i>HP</i></span><p>We received a subpoena this morning.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article id="ch-matters" class="chapter" style="--c:#fbeec4;--c2:#f3dd98;--ci:#8a6212">
+            <div class="chapter-copy">
+              <p class="chapter-kicker">02 · Operate</p>
+              <h3>Every matter carries its own operating context.</h3>
+              <p>People, firms, tasks, key dates, files, budgets and invoices stay on one governed record, with favorites, recents and required closure details.</p>
+            </div>
+            <div class="iso" aria-hidden="true"><div class="iso-plane cols-6 tiles"><span class="tile"><b></b>Commercial litigation</span><span class="tile"><b></b>Employment</span><span class="tile"><b></b>Intellectual property</span><span class="tile"><b></b>M&amp;A</span><span class="tile"><b></b>Regulatory</span><span class="tile"><b></b>Real estate</span><span class="tile"><b></b>Privacy</span><span class="tile"><b></b>Contracts</span><span class="tile"><b></b>Compliance</span><span class="tile"><b></b>Tax</span><span class="tile"><b></b>Product liability</span><span class="tile"><b></b>Antitrust</span><span class="tile"><b></b>Investigations</span><span class="tile"><b></b>Securities</span><span class="tile"><b></b>Insurance</span><span class="tile"><b></b>Environmental</span><span class="tile"><b></b>Labor</span><span class="tile"><b></b>Licensing</span><span class="tile"><b></b>Commercial litigation</span><span class="tile"><b></b>Employment</span><span class="tile"><b></b>Intellectual property</span><span class="tile"><b></b>M&amp;A</span><span class="tile"><b></b>Regulatory</span><span class="tile"><b></b>Real estate</span><span class="tile"><b></b>Privacy</span><span class="tile"><b></b>Contracts</span><span class="tile"><b></b>Compliance</span><span class="tile"><b></b>Tax</span><span class="tile"><b></b>Product liability</span><span class="tile"><b></b>Antitrust</span><span class="tile"><b></b>Investigations</span><span class="tile"><b></b>Securities</span><span class="tile"><b></b>Insurance</span><span class="tile"><b></b>Environmental</span><span class="tile"><b></b>Labor</span><span class="tile"><b></b>Licensing</span></div></div>
+            <div class="strip" aria-hidden="true">
+              <div class="strip-cell">
+                <div class="mini-card">
+                  <div class="mc-top"><span class="pill">Matter</span><span class="ring" style="--p:64"><b>64%</b></span></div>
+                  <strong>Commercial litigation</strong>
+                  <p class="mc-sub">Current phase: <b>Discovery</b></p>
+                  <ul class="mc-list"><li><i class="dot gold"></i>Mediation<span>in 3 days</span></li><li><i class="dot"></i>Expert report due<span>Oct 14</span></li><li><i class="dot"></i>Status update<span>posted</span></li></ul>
+                </div>
+              </div>
+              <div class="strip-cell bubbles">
+                <div class="bubble"><span class="who"><b>Matter lead</b><i>ML</i></span><p>Budget is 64% used heading into mediation.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article id="ch-firms" class="chapter" style="--c:#e7e1f6;--c2:#d6ccf0;--ci:#5a4799">
+            <div class="chapter-copy">
+              <p class="chapter-kicker">03 · Collaborate</p>
+              <h3>A firm portal that fixes problems at the source.</h3>
+              <p>Firms submit LEDES, PDF or manual invoices, correct validation findings and resubmit, and round-trip timekeepers, rates, budgets and accruals behind database-enforced boundaries.</p>
+            </div>
+            <div class="iso" aria-hidden="true"><div class="iso-plane cols-4 network"><span class="chip node n-in"><i></i><b>Invoice submitted</b></span><span class="chip node n-tk"><i></i><b>Timekeeper added</b></span><span class="chip node n-rt"><i></i><b>Rate proposed</b></span><span class="chip node n-bd"><i></i><b>Budget proposed</b></span><span class="chip node n-ac"><i></i><b>Accrual returned</b></span><span class="chip node n-up"><i></i><b>Status update posted</b></span><span class="chip node n-in"><i></i><b>Correction resubmitted</b></span><span class="chip node n-in"><i></i><b>LEDES file uploaded</b></span><span class="chip node n-rt"><i></i><b>Rate approved</b></span><span class="chip node n-bd"><i></i><b>Budget revised</b></span><span class="chip node n-tk"><i></i><b>Timekeeper approved</b></span><span class="chip node n-ac"><i></i><b>Accrual estimate</b></span><span class="chip node n-in"><i></i><b>Invoice submitted</b></span><span class="chip node n-tk"><i></i><b>Timekeeper added</b></span><span class="chip node n-rt"><i></i><b>Rate proposed</b></span><span class="chip node n-bd"><i></i><b>Budget proposed</b></span><span class="chip node n-ac"><i></i><b>Accrual returned</b></span><span class="chip node n-up"><i></i><b>Status update posted</b></span><span class="chip node n-in"><i></i><b>Correction resubmitted</b></span><span class="chip node n-in"><i></i><b>LEDES file uploaded</b></span><span class="chip node n-rt"><i></i><b>Rate approved</b></span><span class="chip node n-bd"><i></i><b>Budget revised</b></span><span class="chip node n-tk"><i></i><b>Timekeeper approved</b></span><span class="chip node n-ac"><i></i><b>Accrual estimate</b></span></div></div>
+            <div class="strip" aria-hidden="true">
+              <div class="strip-cell">
+        <div class="firm-proof" aria-label="Illustration of a firm invoice submission check">
+          <div class="firm-proof-head"><span>Invoice INV-10487</span><strong>Review before submit</strong></div>
+          <div class="proof-row good"><span>✓</span><p><b>Matter matched</b><small>Northstar commercial dispute</small></p></div>
+          <div class="proof-row good"><span>✓</span><p><b>Approved timekeepers</b><small>12 of 12 recognized</small></p></div>
+          <div class="proof-row alert"><span>!</span><p><b>One rate needs attention</b><small>Correct the line or add context</small></p></div>
+          <button type="button" disabled>Submit when ready</button>
+        </div>
+              </div>
+              <div class="strip-cell bubbles">
+                <div class="bubble"><span class="who"><b>Outside counsel</b><i>OC</i></span><p>Corrected the rate on line 4 and resubmitted.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article id="ch-spend" class="chapter" style="--c:#d9eef6;--c2:#bfe0ee;--ci:#1f5f7a">
+            <div class="chapter-copy">
+              <p class="chapter-kicker">04 · Control</p>
+              <h3>Review the bill with the matter beside it.</h3>
+              <p>Guidelines, approved rates, budgets and purchase orders check every line. Cited flags, line-level adjustments and escalation thresholds keep review fast and defensible.</p>
+            </div>
+            <div class="iso" aria-hidden="true"><div class="iso-plane cols-4 invoices"><span class="icard"><em>Block billing</em><b class="x" style="width:62%"></b><b class="x" style="width:38%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Vague narrative</em><b class="x" style="width:69%"></b><b class="x" style="width:49%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Rate above approved</em><b class="x" style="width:76%"></b><b class="x" style="width:60%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Unapproved timekeeper</em><b class="x" style="width:83%"></b><b class="x" style="width:71%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Over matter budget</em><b class="x" style="width:90%"></b><b class="x" style="width:42%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Over PO limit</em><b class="x" style="width:67%"></b><b class="x" style="width:53%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Late submission</em><b class="x" style="width:74%"></b><b class="x" style="width:64%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Expense needs review</em><b class="x" style="width:81%"></b><b class="x" style="width:75%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Block billing</em><b class="x" style="width:88%"></b><b class="x" style="width:46%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Vague narrative</em><b class="x" style="width:65%"></b><b class="x" style="width:57%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Rate above approved</em><b class="x" style="width:72%"></b><b class="x" style="width:68%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Unapproved timekeeper</em><b class="x" style="width:79%"></b><b class="x" style="width:39%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Over matter budget</em><b class="x" style="width:86%"></b><b class="x" style="width:50%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Over PO limit</em><b class="x" style="width:63%"></b><b class="x" style="width:61%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Late submission</em><b class="x" style="width:70%"></b><b class="x" style="width:72%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Expense needs review</em><b class="x" style="width:77%"></b><b class="x" style="width:43%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Block billing</em><b class="x" style="width:84%"></b><b class="x" style="width:54%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Vague narrative</em><b class="x" style="width:91%"></b><b class="x" style="width:65%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Rate above approved</em><b class="x" style="width:68%"></b><b class="x" style="width:76%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Unapproved timekeeper</em><b class="x" style="width:75%"></b><b class="x" style="width:47%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Over matter budget</em><b class="x" style="width:82%"></b><b class="x" style="width:58%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Over PO limit</em><b class="x" style="width:89%"></b><b class="x" style="width:69%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Late submission</em><b class="x" style="width:66%"></b><b class="x" style="width:40%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Expense needs review</em><b class="x" style="width:73%"></b><b class="x" style="width:51%"></b><i><b class="x amt"></b></i></span></div></div>
+            <div class="strip" aria-hidden="true">
+              <div class="strip-cell">
+                <div class="card-shot redacted">
             <div class="rd-sheet">
               <div class="rd-head"><span>Invoice <b class="x" style="width:4.2em"></b></span><span class="rd-pill">In review</span></div>
               <div class="rd-line"><b class="x" style="width:58%"></b><b class="x amt"></b></div>
@@ -219,49 +280,34 @@
               <div class="rd-budget"><span>Matter budget</span><div class="rd-meter"><i></i><em></em></div></div>
               <div class="rd-total"><span>Net to pay</span><b class="x" style="width:6.5em"></b></div>
             </div>
-          </div>
-        </article>
-        <article class="bento portal-card">
-          <span class="card-label">Outside counsel portal</span>
-          <h3>Fix problems before they reach your team.</h3>
-          <p>Firms submit invoices, correct validation findings, propose budgets, return accruals and manage timekeepers across their client and office relationships.</p>
-          <div class="portal-status" aria-hidden="true"><span>Received</span><span>Checking</span><strong>Ready</strong></div>
-        </article>
-        <article class="bento report-card">
-          <span class="card-label">Reporting &amp; AI</span>
-          <h3>Ask a business question. See the bigger picture.</h3>
-          <p>Compose cross-object reports with columns, filters and plain-English assistance. Preview charts, export results and schedule delivery.</p>
-          <div class="ask-box" aria-hidden="true">Show savings by firm this quarter <span>↗</span></div>
-        </article>
-        <article class="bento deployment-card">
-          <span class="card-label">Governed configuration</span>
-          <h3>Adapt the setup to your team.</h3>
-          <p>Manage lists, fields, email rules and login announcements. Import records with validation and generate documents from approved templates.</p>
-          <div class="deploy-options" aria-hidden="true"><span>Fields</span><span>Lists</span><span>Workflows</span></div>
-        </article>
-      </div>
-      <p class="section-action"><a class="btn btn-outline" href="/platform.html">Explore the full platform</a></p>
-    </section>
+                </div>
+              </div>
+              <div class="strip-cell bubbles">
+                <div class="bubble"><span class="who"><b>Approver</b><i>AP</i></span><p>Over my threshold, so it escalated to the GC.</p></div>
+              </div>
+            </div>
+          </article>
 
-    <section class="section firm-section">
-      <div class="firm-panel">
-        <div>
-          <p class="eyebrow eyebrow-light">Outside counsel collaboration</p>
-          <h2>A firm portal designed to reduce cleanup, <span class="tone">not relocate it.</span></h2>
-          <p>Firms see the exact finding, correct the source, and resubmit before bad data reaches the client ledger. The same workspace handles rates, budgets, accruals, files and matter updates.</p>
-          <ul class="check-list light-list">
-            <li>LEDES, PDF and manual invoice submission</li>
-            <li>Firm-side validation and corrected-invoice history</li>
-            <li>Timekeeper, rate, budget and accrual round-trips</li>
-            <li>Database-enforced firm and client boundaries</li>
-          </ul>
-        </div>
-        <div class="firm-proof" aria-label="Illustration of a firm invoice submission check">
-          <div class="firm-proof-head"><span>Invoice INV-10487</span><strong>Review before submit</strong></div>
-          <div class="proof-row good"><span>✓</span><p><b>Matter matched</b><small>Northstar commercial dispute</small></p></div>
-          <div class="proof-row good"><span>✓</span><p><b>Approved timekeepers</b><small>12 of 12 recognized</small></p></div>
-          <div class="proof-row alert"><span>!</span><p><b>One rate needs attention</b><small>Correct the line or add context</small></p></div>
-          <button type="button" disabled>Submit when ready</button>
+          <article id="ch-finance" class="chapter" style="--c:#f7e2d4;--c2:#efc9b1;--ci:#8f4a24">
+            <div class="chapter-copy">
+              <p class="chapter-kicker">05 · Close</p>
+              <h3>Send clean data to AP. See the bigger picture.</h3>
+              <p>Approved spend flows to AP with allocations, accruals reconcile against firm estimates, and cross-object reports answer plain-English questions, then export or schedule delivery.</p>
+            </div>
+            <div class="iso" aria-hidden="true"><div class="iso-plane cols-6 reports"><span class="rtile"><span class="bars"><i style="height:40%"></i><i style="height:72%"></i><i style="height:55%"></i><i style="height:90%"></i><i style="height:62%"></i></span><b>Spend by firm</b></span><span class="rtile"><span class="bars"><i style="height:80%"></i><i style="height:64%"></i><i style="height:70%"></i><i style="height:52%"></i><i style="height:76%"></i></span><b>Budget vs actual</b></span><span class="rtile"><span class="bars"><i style="height:30%"></i><i style="height:48%"></i><i style="height:66%"></i><i style="height:58%"></i><i style="height:84%"></i></span><b>Accruals by quarter</b></span><span class="rtile"><span class="bars"><i style="height:70%"></i><i style="height:44%"></i><i style="height:58%"></i><i style="height:36%"></i><i style="height:50%"></i></span><b>Savings by guideline</b></span><span class="rtile"><span class="bars"><i style="height:60%"></i><i style="height:52%"></i><i style="height:40%"></i><i style="height:34%"></i><i style="height:28%"></i></span><b>Invoice cycle time</b></span><span class="rtile"><span class="bars"><i style="height:50%"></i><i style="height:86%"></i><i style="height:42%"></i><i style="height:64%"></i><i style="height:38%"></i></span><b>Matters by type</b></span><span class="rtile"><span class="bars"><i style="height:44%"></i><i style="height:44%"></i><i style="height:62%"></i><i style="height:62%"></i><i style="height:80%"></i></span><b>AP batches</b></span><span class="rtile"><span class="bars"><i style="height:36%"></i><i style="height:58%"></i><i style="height:48%"></i><i style="height:70%"></i><i style="height:60%"></i></span><b>Rate changes</b></span><span class="rtile"><span class="bars"><i style="height:40%"></i><i style="height:72%"></i><i style="height:55%"></i><i style="height:90%"></i><i style="height:62%"></i></span><b>Spend by firm</b></span><span class="rtile"><span class="bars"><i style="height:80%"></i><i style="height:64%"></i><i style="height:70%"></i><i style="height:52%"></i><i style="height:76%"></i></span><b>Budget vs actual</b></span><span class="rtile"><span class="bars"><i style="height:30%"></i><i style="height:48%"></i><i style="height:66%"></i><i style="height:58%"></i><i style="height:84%"></i></span><b>Accruals by quarter</b></span><span class="rtile"><span class="bars"><i style="height:70%"></i><i style="height:44%"></i><i style="height:58%"></i><i style="height:36%"></i><i style="height:50%"></i></span><b>Savings by guideline</b></span><span class="rtile"><span class="bars"><i style="height:60%"></i><i style="height:52%"></i><i style="height:40%"></i><i style="height:34%"></i><i style="height:28%"></i></span><b>Invoice cycle time</b></span><span class="rtile"><span class="bars"><i style="height:50%"></i><i style="height:86%"></i><i style="height:42%"></i><i style="height:64%"></i><i style="height:38%"></i></span><b>Matters by type</b></span><span class="rtile"><span class="bars"><i style="height:44%"></i><i style="height:44%"></i><i style="height:62%"></i><i style="height:62%"></i><i style="height:80%"></i></span><b>AP batches</b></span><span class="rtile"><span class="bars"><i style="height:36%"></i><i style="height:58%"></i><i style="height:48%"></i><i style="height:70%"></i><i style="height:60%"></i></span><b>Rate changes</b></span><span class="rtile"><span class="bars"><i style="height:40%"></i><i style="height:72%"></i><i style="height:55%"></i><i style="height:90%"></i><i style="height:62%"></i></span><b>Spend by firm</b></span><span class="rtile"><span class="bars"><i style="height:80%"></i><i style="height:64%"></i><i style="height:70%"></i><i style="height:52%"></i><i style="height:76%"></i></span><b>Budget vs actual</b></span><span class="rtile"><span class="bars"><i style="height:30%"></i><i style="height:48%"></i><i style="height:66%"></i><i style="height:58%"></i><i style="height:84%"></i></span><b>Accruals by quarter</b></span><span class="rtile"><span class="bars"><i style="height:70%"></i><i style="height:44%"></i><i style="height:58%"></i><i style="height:36%"></i><i style="height:50%"></i></span><b>Savings by guideline</b></span><span class="rtile"><span class="bars"><i style="height:60%"></i><i style="height:52%"></i><i style="height:40%"></i><i style="height:34%"></i><i style="height:28%"></i></span><b>Invoice cycle time</b></span><span class="rtile"><span class="bars"><i style="height:50%"></i><i style="height:86%"></i><i style="height:42%"></i><i style="height:64%"></i><i style="height:38%"></i></span><b>Matters by type</b></span><span class="rtile"><span class="bars"><i style="height:44%"></i><i style="height:44%"></i><i style="height:62%"></i><i style="height:62%"></i><i style="height:80%"></i></span><b>AP batches</b></span><span class="rtile"><span class="bars"><i style="height:36%"></i><i style="height:58%"></i><i style="height:48%"></i><i style="height:70%"></i><i style="height:60%"></i></span><b>Rate changes</b></span></div></div>
+            <div class="strip" aria-hidden="true">
+              <div class="strip-cell">
+                <div class="mini-card">
+                  <div class="mc-top"><span class="pill">Report</span><span class="mono">Scheduled · Mondays</span></div>
+                  <strong>Savings by firm</strong>
+                  <div class="mc-chart"><i style="height:58%"></i><i style="height:82%"></i><i style="height:40%"></i><i style="height:66%"></i><i class="g" style="height:92%"></i><i style="height:50%"></i></div>
+                </div>
+              </div>
+              <div class="strip-cell bubbles">
+                <div class="ask-box">Show savings by firm this quarter <span>↗</span></div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -281,8 +327,12 @@
     </section>
 
     <section class="section sandbox-preview">
-      <div><p class="eyebrow">Hands-on product sandbox</p><h2>Take our e-billing system <span class="tone">for a test drive.</span></h2></div>
+      <div><p class="eyebrow">Hands-on product sandbox</p><h2>Take our e&#8209;billing system <span class="tone">for a test drive.</span></h2></div>
       <div><p>Explore realistic matters, firms, invoices, budgets and reports using synthetic data. No production data, customer integrations or full implementation project required.</p><a class="btn btn-outline" href="/sandbox.html">Explore sandbox access</a></div>
+      <a class="booklet" href="#contact" aria-label="Request a private walkthrough">
+        <span class="bk-cover"><span class="bk-kicker">■ Private preview</span><img src="/brand-mark-light.svg" width="44" height="44" alt="" /></span>
+        <span class="bk-body"><span class="bk-title">The eBilling System, by invitation</span><span class="bk-link">Request a walkthrough →</span></span>
+      </a>
     </section>
 
     <section id="contact" class="section contact-section">
@@ -331,6 +381,20 @@
     </div>
     <nav aria-label="Footer navigation"><a href="/platform.html">Platform</a><a href="/security.html">Security</a><a href="/sandbox.html">Sandbox</a><a href="mailto:hello@theebillingcompany.com">Contact</a></nav>
     <p class="foot-meta">theebillingcompany.com<br />© 2026 The eBilling Company</p>
+    <div class="foot-word" aria-hidden="true">eBilling</div>
   </footer>
+  <script>
+    (() => {
+      if (!('IntersectionObserver' in window)) return;
+      const hero = document.querySelector('[data-hero]');
+      if (hero) new IntersectionObserver(([e]) => document.body.classList.toggle('on-dark', e.isIntersecting),
+        { rootMargin: '0px 0px -88% 0px' }).observe(hero);
+      const links = [...document.querySelectorAll('.chapter-nav a')];
+      const spy = new IntersectionObserver((entries) => entries.forEach((e) => {
+        if (e.isIntersecting) links.forEach((a) => a.classList.toggle('on', a.hash === '#' + e.target.id));
+      }), { rootMargin: '-45% 0px -50% 0px' });
+      document.querySelectorAll('.chapter').forEach((c) => spy.observe(c));
+    })();
+  </script>
 </body>
 </html>
