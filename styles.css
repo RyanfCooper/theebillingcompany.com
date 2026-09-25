@@ -891,7 +891,6 @@ body::after { right: 20px; }
     linear-gradient(var(--c2) 1px, transparent 1px) 0 0 / 44px 44px,
     linear-gradient(90deg, var(--c2) 1px, transparent 1px) 0 0 / 44px 44px;
   transform: translate(-50%, -50%) rotateX(56deg) rotateZ(-38deg);
-  animation: iso-drift 22s ease-in-out infinite alternate;
 }
 @keyframes iso-drift {
   from { transform: translate(-50%, -50%) rotateX(56deg) rotateZ(-38deg) translate(0, 0); }
@@ -1097,10 +1096,10 @@ body::after { right: 20px; }
 }
 .story-track { position: relative; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: clamp(0.6rem, 1.6vw, 1.4rem); list-style: none; }
 .story-rail { position: absolute; left: 10%; right: 10%; bottom: calc(1.9rem + 21px); height: 2px; background: rgba(255, 255, 255, 0.16); border-radius: 2px; }
-.story-fill { position: absolute; inset: 0 auto 0 0; width: 0; background: linear-gradient(90deg, var(--mint), var(--gold)); border-radius: inherit; animation: st-fill 14s linear infinite; }
-.story-dot { position: absolute; top: 50%; left: 0; width: 14px; height: 14px; margin: -7px 0 0 -7px; background: var(--gold); border-radius: 50%; box-shadow: 0 0 0 6px rgba(231, 180, 81, 0.25), 0 0 24px 6px rgba(231, 180, 81, 0.45); animation: st-dot 14s linear infinite; }
-@keyframes st-fill { 0%, 4% { width: 0; opacity: 1; } 72%, 91% { width: 100%; opacity: 1; } 96% { width: 100%; opacity: 0; } 100% { width: 0; opacity: 0; } }
-@keyframes st-dot { 0%, 4% { left: 0; opacity: 1; } 72%, 91% { left: 100%; opacity: 1; } 96%, 100% { left: 100%; opacity: 0; } }
+.story-fill { position: absolute; inset: 0 auto 0 0; width: 0; background: linear-gradient(90deg, var(--mint), var(--gold)); border-radius: inherit; animation: st-fill 5.5s cubic-bezier(0.4, 0, 0.3, 1) 0.4s both; }
+.story-dot { position: absolute; top: 50%; left: 0; width: 14px; height: 14px; margin: -7px 0 0 -7px; background: var(--gold); border-radius: 50%; box-shadow: 0 0 0 6px rgba(231, 180, 81, 0.25), 0 0 24px 6px rgba(231, 180, 81, 0.45); animation: st-dot 5.5s cubic-bezier(0.4, 0, 0.3, 1) 0.4s both; }
+@keyframes st-fill { 0%, 4% { width: 0; } 72%, 100% { width: 100%; } }
+@keyframes st-dot { 0%, 4% { left: 0; } 72%, 100% { left: 100%; } }
 .st { display: flex; flex-direction: column; align-items: center; gap: 1.1rem; min-width: 0; }
 .st-card {
   width: 100%;
@@ -1115,9 +1114,10 @@ body::after { right: 20px; }
   border-radius: 14px;
   box-shadow: 0 24px 50px -20px rgba(0, 0, 0, 0.55);
   opacity: 0;
-  animation-duration: 14s;
+  animation-duration: 5.5s;
+  animation-delay: 0.4s;
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
-  animation-iteration-count: infinite;
+  animation-fill-mode: both;
 }
 .st-card strong { margin-top: 0.45rem; font-size: 1.02rem; font-weight: 600; letter-spacing: -0.015em; }
 .st-card small { color: var(--muted); font-size: 0.8rem; }
@@ -1133,35 +1133,36 @@ body::after { right: 20px; }
   place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 12px;
-  animation-duration: 14s;
+  animation-duration: 5.5s;
+  animation-delay: 0.4s;
   animation-timing-function: ease;
-  animation-iteration-count: infinite;
+  animation-fill-mode: both;
 }
 .st-label { color: rgba(243, 240, 226, 0.7); font: 500 0.7rem/1 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; }
-@keyframes st1 { 0%, 3% { opacity: 0; transform: translateY(18px) scale(0.94); } 7%, 91% { opacity: 1; transform: none; } 96%, 100% { opacity: 0; transform: translateY(-8px); } }
-@keyframes nd1 { 0%, 3% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); box-shadow: none; } 5%, 91% { color: #1c160a; background: var(--gold); border-color: var(--gold); box-shadow: 0 0 0 8px rgba(231, 180, 81, 0.18); } 96%, 100% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); box-shadow: none; } }
+@keyframes st1 { 0%, 3% { opacity: 0; transform: translateY(18px) scale(0.94); } 10%, 100% { opacity: 1; transform: none; } }
+@keyframes nd1 { 0%, 3% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); } 7%, 100% { color: #1c160a; background: var(--gold); border-color: var(--gold); } }
 .st1 .st-card { animation-name: st1; }
 .st1 .st-node { animation-name: nd1; }
-@keyframes st2 { 0%, 20% { opacity: 0; transform: translateY(18px) scale(0.94); } 24%, 91% { opacity: 1; transform: none; } 96%, 100% { opacity: 0; transform: translateY(-8px); } }
-@keyframes nd2 { 0%, 20% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); box-shadow: none; } 22%, 91% { color: #1c160a; background: var(--gold); border-color: var(--gold); box-shadow: 0 0 0 8px rgba(231, 180, 81, 0.18); } 96%, 100% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); box-shadow: none; } }
+@keyframes st2 { 0%, 20% { opacity: 0; transform: translateY(18px) scale(0.94); } 27%, 100% { opacity: 1; transform: none; } }
+@keyframes nd2 { 0%, 20% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); } 24%, 100% { color: #1c160a; background: var(--gold); border-color: var(--gold); } }
 .st2 .st-card { animation-name: st2; }
 .st2 .st-node { animation-name: nd2; }
-@keyframes st3 { 0%, 37% { opacity: 0; transform: translateY(18px) scale(0.94); } 41%, 91% { opacity: 1; transform: none; } 96%, 100% { opacity: 0; transform: translateY(-8px); } }
-@keyframes nd3 { 0%, 37% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); box-shadow: none; } 39%, 91% { color: #1c160a; background: var(--gold); border-color: var(--gold); box-shadow: 0 0 0 8px rgba(231, 180, 81, 0.18); } 96%, 100% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); box-shadow: none; } }
+@keyframes st3 { 0%, 37% { opacity: 0; transform: translateY(18px) scale(0.94); } 44%, 100% { opacity: 1; transform: none; } }
+@keyframes nd3 { 0%, 37% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); } 41%, 100% { color: #1c160a; background: var(--gold); border-color: var(--gold); } }
 .st3 .st-card { animation-name: st3; }
 .st3 .st-node { animation-name: nd3; }
-@keyframes st4 { 0%, 54% { opacity: 0; transform: translateY(18px) scale(0.94); } 58%, 91% { opacity: 1; transform: none; } 96%, 100% { opacity: 0; transform: translateY(-8px); } }
-@keyframes nd4 { 0%, 54% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); box-shadow: none; } 56%, 91% { color: #1c160a; background: var(--gold); border-color: var(--gold); box-shadow: 0 0 0 8px rgba(231, 180, 81, 0.18); } 96%, 100% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); box-shadow: none; } }
+@keyframes st4 { 0%, 54% { opacity: 0; transform: translateY(18px) scale(0.94); } 61%, 100% { opacity: 1; transform: none; } }
+@keyframes nd4 { 0%, 54% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); } 58%, 100% { color: #1c160a; background: var(--gold); border-color: var(--gold); } }
 .st4 .st-card { animation-name: st4; }
 .st4 .st-node { animation-name: nd4; }
-@keyframes st5 { 0%, 71% { opacity: 0; transform: translateY(18px) scale(0.94); } 75%, 91% { opacity: 1; transform: none; } 96%, 100% { opacity: 0; transform: translateY(-8px); } }
-@keyframes nd5 { 0%, 71% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); box-shadow: none; } 73%, 91% { color: #1c160a; background: var(--gold); border-color: var(--gold); box-shadow: 0 0 0 8px rgba(231, 180, 81, 0.18); } 96%, 100% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); box-shadow: none; } }
+@keyframes st5 { 0%, 71% { opacity: 0; transform: translateY(18px) scale(0.94); } 78%, 100% { opacity: 1; transform: none; } }
+@keyframes nd5 { 0%, 71% { color: rgba(243, 240, 226, 0.6); background: var(--green); border-color: rgba(255, 255, 255, 0.22); } 75%, 100% { color: #1c160a; background: var(--gold); border-color: var(--gold); } }
 .st5 .st-card { animation-name: st5; }
 .st5 .st-node { animation-name: nd5; }
 
 /* Marquee. */
 .marquee { overflow: hidden; padding: 1.3rem 0; background: var(--paper); border-bottom: 1px solid var(--line); }
-.marquee-track { display: flex; align-items: center; gap: 2.2rem; width: max-content; animation: marquee 45s linear infinite; }
+.marquee-track { display: flex; align-items: center; gap: 2.2rem; width: max-content; animation: marquee 90s linear infinite; }
 .marquee span { color: var(--ink); font-size: clamp(1.6rem, 3.2vw, 2.7rem); font-weight: 550; letter-spacing: -0.035em; white-space: nowrap; }
 .marquee span:nth-of-type(even) { color: var(--soft); }
 .marquee i { color: var(--gold); font-size: 1rem; font-style: normal; }
@@ -1209,7 +1210,7 @@ body::after { right: 20px; }
 .contact-copy h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); }
 
 /* Scroll reveals (only when JS is on). */
-.js .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.9s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.js .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .js .reveal.in { opacity: 1; transform: none; }
 .js .booklet.reveal.in { transform: perspective(1200px) rotateY(-20deg) rotateX(5deg) rotateZ(-3deg); }
 .js .booklet.reveal.in:hover { transform: perspective(1200px) rotateY(-8deg) rotateX(2deg) rotateZ(-1deg) translateY(-4px); }
