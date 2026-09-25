@@ -30,6 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;450;500;600;650;700&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+  <script>document.documentElement.classList.add('js')</script>
 
   <script type="application/ld+json">
   {
@@ -82,106 +83,59 @@
     <section class="hero hero-dark" data-hero>
       <span class="tab tab-tl" aria-hidden="true"></span><span class="tab tab-tr" aria-hidden="true"></span>
       <div class="hero-copy">
-        <p class="eyebrow eyebrow-light">Matter-first enterprise legal management</p>
+        <p class="eyebrow eyebrow-light">Matter-first legal management</p>
         <h1>Run legal work <span class="tone">from first request to final payment.</span></h1>
-        <p class="lede">
-          The eBilling System connects intake, matters, deadlines, outside counsel,
-          invoices, budgets, accruals and AP in one platform for in-house legal teams.
-        </p>
+        <p class="lede">One platform for in-house legal, from intake to AP.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#contact">Request a demo</a>
           <a class="btn btn-ghost" href="#chapters">See how it works</a>
         </div>
       </div>
-
-    <div class="product-stage">
-      <span class="tab tab-bl" aria-hidden="true"></span><span class="tab tab-br" aria-hidden="true"></span>
-      <figure class="window sealed" aria-label="A private preview of The eBilling System">
-        <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.theebillingcompany.com</span></div>
-        <div class="ghost" aria-hidden="true">
-          <div class="g-rail"><b></b><i></i><i></i><i class="on"></i><i></i><i></i><i></i></div>
-          <div class="g-main">
-            <div class="g-head"><b></b><em></em><em></em><em class="gold"></em></div>
-            <div class="g-meta"><span></span><span></span><span></span><span></span><span></span></div>
-            <div class="g-cols">
-              <div class="g-list"><div class="g-tabs"><i class="on"></i><i></i><i></i><i></i></div><div class="g-row"><i style="width:62%"></i><em></em></div><div class="g-row"><i style="width:48%"></i><em></em></div><div class="g-row"><i style="width:70%"></i><em></em></div><div class="g-row"><i style="width:54%"></i><em></em></div></div>
-              <div class="g-side"><div class="g-card"><i></i><div class="g-meter"><span></span></div><i class="short"></i></div><div class="g-card"><i></i><i class="short"></i><i></i></div></div>
-            </div>
-          </div>
-          <div class="g-scan"></div>
-        </div>
-        <figcaption class="veil">
-          <span class="veil-lock" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></span>
-          <strong>Private preview</strong>
-          <p>We walk each legal team through The eBilling System personally, on your matters and your workflow.</p>
-          <a class="btn btn-primary" href="#contact">Request a walkthrough</a>
-        </figcaption>
-      </figure>
-      <aside class="float-card float-right" aria-hidden="true">
-        <div class="fc-top"><span class="fc-icon">$</span><span class="fc-tag warn">1 guideline flag</span></div>
-        <strong>Invoice ready for review</strong>
-        <p>Checked against the matter, the rates and your guidelines before it reaches you.</p>
-      </aside>
-      <aside class="float-card float-left" aria-hidden="true">
-        <div class="fc-top"><span class="fc-icon">◔</span><span class="fc-tag">Live budget</span></div>
-        <strong>$87,270 pending in review</strong>
-        <p>21% of a $425,000 matter budget, before a single dollar is approved.</p>
-        <div class="fc-meter"><span></span></div>
-      </aside>
-      <aside class="ghost-card ghost-a" aria-hidden="true"><span class="fc-tag">Key date</span><strong>Mediation in 3 days</strong><i></i><i class="s"></i></aside>
-      <aside class="ghost-card ghost-b" aria-hidden="true"><span class="fc-tag">Firm portal</span><strong>Accrual returned</strong><i></i><i class="s"></i></aside>
-      <aside class="ghost-card ghost-c" aria-hidden="true"><span class="fc-tag">Intake</span><strong>New request</strong><i></i><i class="s"></i></aside>
-    </div>
+      <div class="story" aria-label="A matter's journey: request, matter, firm, invoice, paid">
+        <span class="tab tab-bl" aria-hidden="true"></span><span class="tab tab-br" aria-hidden="true"></span>
+        <ol class="story-track">
+          <li class="story-rail" aria-hidden="true"><span class="story-fill"></span><span class="story-dot"></span></li>
+          <li class="st st1">
+            <div class="st-card"><span class="st-tag t-in">New</span><strong>New request</strong><small>Supplier contract review</small></div>
+            <span class="st-node"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13l2-8h12l2 8M4 13v5h16v-5M4 13h5l1 2h4l1-2h5"/></svg></span>
+            <span class="st-label">Request</span>
+          </li>
+          <li class="st st2">
+            <div class="st-card"><span class="st-tag t-mt">Lead + firm assigned</span><strong>Matter opened</strong><small>Commercial litigation</small></div>
+            <span class="st-node"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h6l2 2h8v9H4z"/></svg></span>
+            <span class="st-label">Matter</span>
+          </li>
+          <li class="st st3">
+            <div class="st-card"><span class="st-tag t-fm">Firm portal</span><strong>Rates approved</strong><small>12 timekeepers</small></div>
+            <span class="st-node"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V9l8-5 8 5v11M9 20v-6h6v6"/></svg></span>
+            <span class="st-label">Firm</span>
+          </li>
+          <li class="st st4">
+            <div class="st-card"><span class="st-tag t-iv">Flagged</span><strong>1 guideline flag</strong><small>Block billing · line 4</small></div>
+            <span class="st-node"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v18l-2.5-1.5L12 21l-2.5-1.5L7 21zM10 8h4M10 12h4"/></svg></span>
+            <span class="st-label">Invoice</span>
+          </li>
+          <li class="st st5">
+            <div class="st-card"><span class="st-tag t-pd">Paid</span><strong>Sent to AP</strong><small>Accrual reconciled</small></div>
+            <span class="st-node"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <span class="st-label">Paid</span>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <section class="signal-band" aria-label="Core platform coverage">
-      <a href="/platform.html"><strong>Enterprise Legal Management System</strong></a>
-      <a href="/platform.html#matter-management">Matter management</a>
-      <a href="/platform.html#legal-ebilling">Legal e-billing</a>
-      <a href="/platform.html#outside-counsel">Outside counsel</a>
-      <a href="/platform.html#budgets-accruals">Budgets &amp; accruals</a>
-      <a href="/platform.html#reporting-ai">Reports &amp; AI</a>
-    </section>
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Matter management</span><i aria-hidden="true">◆</i><span>Legal e-billing</span><i aria-hidden="true">◆</i><span>Outside counsel</span><i aria-hidden="true">◆</i><span>Budgets</span><i aria-hidden="true">◆</i><span>Accruals</span><i aria-hidden="true">◆</i><span>AP export</span><i aria-hidden="true">◆</i><span>Reports</span><i aria-hidden="true">◆</i><span>AI assistance</span><i aria-hidden="true">◆</i><span>Service of process</span><i aria-hidden="true">◆</i><span>Rate review</span><i aria-hidden="true">◆</i><span>Matter management</span><i aria-hidden="true">◆</i><span>Legal e-billing</span><i aria-hidden="true">◆</i><span>Outside counsel</span><i aria-hidden="true">◆</i><span>Budgets</span><i aria-hidden="true">◆</i><span>Accruals</span><i aria-hidden="true">◆</i><span>AP export</span><i aria-hidden="true">◆</i><span>Reports</span><i aria-hidden="true">◆</i><span>AI assistance</span><i aria-hidden="true">◆</i><span>Service of process</span><i aria-hidden="true">◆</i><span>Rate review</span><i aria-hidden="true">◆</i></div></div>
 
-    <section id="difference" class="section section-split">
-      <div class="section-intro sticky-intro">
-        <p class="eyebrow">Why matter-first</p>
-        <h2>Spend management is one chapter. <span class="tone">We connect the whole story.</span></h2>
-        <p>
-          Point tools become useful when an invoice arrives. Legal work starts much earlier.
-          The eBilling System keeps the request, matter, people, work, budget and bill connected,
-          so the department can act before spend becomes a surprise.
-        </p>
-        <a class="text-link" href="/platform.html">See every platform capability <span aria-hidden="true">→</span></a>
-      </div>
-      <div class="comparison" role="table" aria-label="Spend-only tools compared with The eBilling System">
-        <div class="comparison-head" role="row">
-          <span role="columnheader">Spend-only tool</span>
-          <strong role="columnheader">The eBilling System</strong>
-        </div>
-        <div class="comparison-row" role="row">
-          <span role="cell">Starts when the invoice arrives</span>
-          <strong role="cell">Starts with the legal request and matter</strong>
-        </div>
-        <div class="comparison-row" role="row">
-          <span role="cell">Analyzes outside counsel spend</span>
-          <strong role="cell">Connects work, deadlines, firms, budgets and spend</strong>
-        </div>
-        <div class="comparison-row" role="row">
-          <span role="cell">Collects invoices from firms</span>
-          <strong role="cell">Gives firms a complete collaboration workspace</strong>
-        </div>
-        <div class="comparison-row" role="row">
-          <span role="cell">Ends at approval or export</span>
-          <strong role="cell">Continues through AP, payment and reconciliation</strong>
-        </div>
-      </div>
+    <section class="claim">
+      <p class="claim-line reveal">Spend is one chapter.</p>
+      <p class="claim-line claim-2 reveal">We run the whole story.</p>
+      <a class="claim-link reveal" href="/platform.html">See the platform <span aria-hidden="true">→</span></a>
     </section>
 
     <section id="chapters" class="chapters-section">
-      <div class="chapters-intro">
-        <p class="eyebrow">One connected system</p>
-        <h2>Every handoff, <span class="tone">one matter record.</span></h2>
+      <div class="chapters-intro reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>Five handoffs. <span class="tone">One record.</span></h2>
       </div>
       <div class="chapters">
         <nav class="chapter-nav" aria-label="How it works">
@@ -193,11 +147,10 @@
         </nav>
         <div class="chapter-list">
 
-          <article id="ch-intake" class="chapter" style="--c:#e2f0d0;--c2:#cfe5b6;--ci:#2f6b3a">
+          <article id="ch-intake" class="chapter reveal" style="--c:#e2f0d0;--c2:#cfe5b6;--ci:#2f6b3a">
             <div class="chapter-copy">
               <p class="chapter-kicker">01 · Intake</p>
-              <h3>Capture the request before it becomes an email thread.</h3>
-              <p>Business requests and service of process arrive through structured forms with the context legal needs, then convert into a matter in one step.</p>
+              <h3>Requests, not email threads.</h3>
             </div>
             <div class="iso" aria-hidden="true"><div class="iso-plane cols-4"><span class="chip"><i class="ic-doc"></i><b>Contract review</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Service of process</b><em>Logged</em></span><span class="chip"><i class="ic-doc"></i><b>Employment question</b><em>Triage</em></span><span class="chip"><i class="ic-doc"></i><b>Litigation hold</b><em>Urgent</em></span><span class="chip"><i class="ic-doc"></i><b>NDA request</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Regulatory inquiry</b><em>Triage</em></span><span class="chip"><i class="ic-doc"></i><b>Subpoena received</b><em>Logged</em></span><span class="chip"><i class="ic-doc"></i><b>Vendor dispute</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Board consent</b><em>Converted</em></span><span class="chip"><i class="ic-doc"></i><b>IP clearance</b><em>Triage</em></span><span class="chip"><i class="ic-doc"></i><b>Lease renewal</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Data request</b><em>Urgent</em></span><span class="chip"><i class="ic-doc"></i><b>Contract review</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Service of process</b><em>Logged</em></span><span class="chip"><i class="ic-doc"></i><b>Employment question</b><em>Triage</em></span><span class="chip"><i class="ic-doc"></i><b>Litigation hold</b><em>Urgent</em></span><span class="chip"><i class="ic-doc"></i><b>NDA request</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Regulatory inquiry</b><em>Triage</em></span><span class="chip"><i class="ic-doc"></i><b>Subpoena received</b><em>Logged</em></span><span class="chip"><i class="ic-doc"></i><b>Vendor dispute</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Board consent</b><em>Converted</em></span><span class="chip"><i class="ic-doc"></i><b>IP clearance</b><em>Triage</em></span><span class="chip"><i class="ic-doc"></i><b>Lease renewal</b><em>New</em></span><span class="chip"><i class="ic-doc"></i><b>Data request</b><em>Urgent</em></span></div></div>
             <div class="strip" aria-hidden="true">
@@ -216,11 +169,10 @@
             </div>
           </article>
 
-          <article id="ch-matters" class="chapter" style="--c:#fbeec4;--c2:#f3dd98;--ci:#8a6212">
+          <article id="ch-matters" class="chapter reveal" style="--c:#fbeec4;--c2:#f3dd98;--ci:#8a6212">
             <div class="chapter-copy">
               <p class="chapter-kicker">02 · Operate</p>
-              <h3>Every matter carries its own operating context.</h3>
-              <p>People, firms, tasks, key dates, files, budgets and invoices stay on one governed record, with favorites, recents and required closure details.</p>
+              <h3>Every matter, in context.</h3>
             </div>
             <div class="iso" aria-hidden="true"><div class="iso-plane cols-6 tiles"><span class="tile"><b></b>Commercial litigation</span><span class="tile"><b></b>Employment</span><span class="tile"><b></b>Intellectual property</span><span class="tile"><b></b>M&amp;A</span><span class="tile"><b></b>Regulatory</span><span class="tile"><b></b>Real estate</span><span class="tile"><b></b>Privacy</span><span class="tile"><b></b>Contracts</span><span class="tile"><b></b>Compliance</span><span class="tile"><b></b>Tax</span><span class="tile"><b></b>Product liability</span><span class="tile"><b></b>Antitrust</span><span class="tile"><b></b>Investigations</span><span class="tile"><b></b>Securities</span><span class="tile"><b></b>Insurance</span><span class="tile"><b></b>Environmental</span><span class="tile"><b></b>Labor</span><span class="tile"><b></b>Licensing</span><span class="tile"><b></b>Commercial litigation</span><span class="tile"><b></b>Employment</span><span class="tile"><b></b>Intellectual property</span><span class="tile"><b></b>M&amp;A</span><span class="tile"><b></b>Regulatory</span><span class="tile"><b></b>Real estate</span><span class="tile"><b></b>Privacy</span><span class="tile"><b></b>Contracts</span><span class="tile"><b></b>Compliance</span><span class="tile"><b></b>Tax</span><span class="tile"><b></b>Product liability</span><span class="tile"><b></b>Antitrust</span><span class="tile"><b></b>Investigations</span><span class="tile"><b></b>Securities</span><span class="tile"><b></b>Insurance</span><span class="tile"><b></b>Environmental</span><span class="tile"><b></b>Labor</span><span class="tile"><b></b>Licensing</span></div></div>
             <div class="strip" aria-hidden="true">
@@ -238,11 +190,10 @@
             </div>
           </article>
 
-          <article id="ch-firms" class="chapter" style="--c:#e7e1f6;--c2:#d6ccf0;--ci:#5a4799">
+          <article id="ch-firms" class="chapter reveal" style="--c:#e7e1f6;--c2:#d6ccf0;--ci:#5a4799">
             <div class="chapter-copy">
               <p class="chapter-kicker">03 · Collaborate</p>
-              <h3>A firm portal that fixes problems at the source.</h3>
-              <p>Firms submit LEDES, PDF or manual invoices, correct validation findings and resubmit, and round-trip timekeepers, rates, budgets and accruals behind database-enforced boundaries.</p>
+              <h3>Firms fix it at the source.</h3>
             </div>
             <div class="iso" aria-hidden="true"><div class="iso-plane cols-4 network"><span class="chip node n-in"><i></i><b>Invoice submitted</b></span><span class="chip node n-tk"><i></i><b>Timekeeper added</b></span><span class="chip node n-rt"><i></i><b>Rate proposed</b></span><span class="chip node n-bd"><i></i><b>Budget proposed</b></span><span class="chip node n-ac"><i></i><b>Accrual returned</b></span><span class="chip node n-up"><i></i><b>Status update posted</b></span><span class="chip node n-in"><i></i><b>Correction resubmitted</b></span><span class="chip node n-in"><i></i><b>LEDES file uploaded</b></span><span class="chip node n-rt"><i></i><b>Rate approved</b></span><span class="chip node n-bd"><i></i><b>Budget revised</b></span><span class="chip node n-tk"><i></i><b>Timekeeper approved</b></span><span class="chip node n-ac"><i></i><b>Accrual estimate</b></span><span class="chip node n-in"><i></i><b>Invoice submitted</b></span><span class="chip node n-tk"><i></i><b>Timekeeper added</b></span><span class="chip node n-rt"><i></i><b>Rate proposed</b></span><span class="chip node n-bd"><i></i><b>Budget proposed</b></span><span class="chip node n-ac"><i></i><b>Accrual returned</b></span><span class="chip node n-up"><i></i><b>Status update posted</b></span><span class="chip node n-in"><i></i><b>Correction resubmitted</b></span><span class="chip node n-in"><i></i><b>LEDES file uploaded</b></span><span class="chip node n-rt"><i></i><b>Rate approved</b></span><span class="chip node n-bd"><i></i><b>Budget revised</b></span><span class="chip node n-tk"><i></i><b>Timekeeper approved</b></span><span class="chip node n-ac"><i></i><b>Accrual estimate</b></span></div></div>
             <div class="strip" aria-hidden="true">
@@ -261,11 +212,10 @@
             </div>
           </article>
 
-          <article id="ch-spend" class="chapter" style="--c:#d9eef6;--c2:#bfe0ee;--ci:#1f5f7a">
+          <article id="ch-spend" class="chapter reveal" style="--c:#d9eef6;--c2:#bfe0ee;--ci:#1f5f7a">
             <div class="chapter-copy">
               <p class="chapter-kicker">04 · Control</p>
-              <h3>Review the bill with the matter beside it.</h3>
-              <p>Guidelines, approved rates, budgets and purchase orders check every line. Cited flags, line-level adjustments and escalation thresholds keep review fast and defensible.</p>
+              <h3>Review with the matter beside it.</h3>
             </div>
             <div class="iso" aria-hidden="true"><div class="iso-plane cols-4 invoices"><span class="icard"><em>Block billing</em><b class="x" style="width:62%"></b><b class="x" style="width:38%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Vague narrative</em><b class="x" style="width:69%"></b><b class="x" style="width:49%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Rate above approved</em><b class="x" style="width:76%"></b><b class="x" style="width:60%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Unapproved timekeeper</em><b class="x" style="width:83%"></b><b class="x" style="width:71%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Over matter budget</em><b class="x" style="width:90%"></b><b class="x" style="width:42%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Over PO limit</em><b class="x" style="width:67%"></b><b class="x" style="width:53%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Late submission</em><b class="x" style="width:74%"></b><b class="x" style="width:64%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Expense needs review</em><b class="x" style="width:81%"></b><b class="x" style="width:75%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Block billing</em><b class="x" style="width:88%"></b><b class="x" style="width:46%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Vague narrative</em><b class="x" style="width:65%"></b><b class="x" style="width:57%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Rate above approved</em><b class="x" style="width:72%"></b><b class="x" style="width:68%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Unapproved timekeeper</em><b class="x" style="width:79%"></b><b class="x" style="width:39%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Over matter budget</em><b class="x" style="width:86%"></b><b class="x" style="width:50%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Over PO limit</em><b class="x" style="width:63%"></b><b class="x" style="width:61%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Late submission</em><b class="x" style="width:70%"></b><b class="x" style="width:72%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Expense needs review</em><b class="x" style="width:77%"></b><b class="x" style="width:43%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Block billing</em><b class="x" style="width:84%"></b><b class="x" style="width:54%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Vague narrative</em><b class="x" style="width:91%"></b><b class="x" style="width:65%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Rate above approved</em><b class="x" style="width:68%"></b><b class="x" style="width:76%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Unapproved timekeeper</em><b class="x" style="width:75%"></b><b class="x" style="width:47%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Over matter budget</em><b class="x" style="width:82%"></b><b class="x" style="width:58%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Over PO limit</em><b class="x" style="width:89%"></b><b class="x" style="width:69%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Late submission</em><b class="x" style="width:66%"></b><b class="x" style="width:40%"></b><i><b class="x amt"></b></i></span><span class="icard"><em>Expense needs review</em><b class="x" style="width:73%"></b><b class="x" style="width:51%"></b><i><b class="x amt"></b></i></span></div></div>
             <div class="strip" aria-hidden="true">
@@ -288,11 +238,10 @@
             </div>
           </article>
 
-          <article id="ch-finance" class="chapter" style="--c:#f7e2d4;--c2:#efc9b1;--ci:#8f4a24">
+          <article id="ch-finance" class="chapter reveal" style="--c:#f7e2d4;--c2:#efc9b1;--ci:#8f4a24">
             <div class="chapter-copy">
               <p class="chapter-kicker">05 · Close</p>
-              <h3>Send clean data to AP. See the bigger picture.</h3>
-              <p>Approved spend flows to AP with allocations, accruals reconcile against firm estimates, and cross-object reports answer plain-English questions, then export or schedule delivery.</p>
+              <h3>Paid, accrued, reported.</h3>
             </div>
             <div class="iso" aria-hidden="true"><div class="iso-plane cols-6 reports"><span class="rtile"><span class="bars"><i style="height:40%"></i><i style="height:72%"></i><i style="height:55%"></i><i style="height:90%"></i><i style="height:62%"></i></span><b>Spend by firm</b></span><span class="rtile"><span class="bars"><i style="height:80%"></i><i style="height:64%"></i><i style="height:70%"></i><i style="height:52%"></i><i style="height:76%"></i></span><b>Budget vs actual</b></span><span class="rtile"><span class="bars"><i style="height:30%"></i><i style="height:48%"></i><i style="height:66%"></i><i style="height:58%"></i><i style="height:84%"></i></span><b>Accruals by quarter</b></span><span class="rtile"><span class="bars"><i style="height:70%"></i><i style="height:44%"></i><i style="height:58%"></i><i style="height:36%"></i><i style="height:50%"></i></span><b>Savings by guideline</b></span><span class="rtile"><span class="bars"><i style="height:60%"></i><i style="height:52%"></i><i style="height:40%"></i><i style="height:34%"></i><i style="height:28%"></i></span><b>Invoice cycle time</b></span><span class="rtile"><span class="bars"><i style="height:50%"></i><i style="height:86%"></i><i style="height:42%"></i><i style="height:64%"></i><i style="height:38%"></i></span><b>Matters by type</b></span><span class="rtile"><span class="bars"><i style="height:44%"></i><i style="height:44%"></i><i style="height:62%"></i><i style="height:62%"></i><i style="height:80%"></i></span><b>AP batches</b></span><span class="rtile"><span class="bars"><i style="height:36%"></i><i style="height:58%"></i><i style="height:48%"></i><i style="height:70%"></i><i style="height:60%"></i></span><b>Rate changes</b></span><span class="rtile"><span class="bars"><i style="height:40%"></i><i style="height:72%"></i><i style="height:55%"></i><i style="height:90%"></i><i style="height:62%"></i></span><b>Spend by firm</b></span><span class="rtile"><span class="bars"><i style="height:80%"></i><i style="height:64%"></i><i style="height:70%"></i><i style="height:52%"></i><i style="height:76%"></i></span><b>Budget vs actual</b></span><span class="rtile"><span class="bars"><i style="height:30%"></i><i style="height:48%"></i><i style="height:66%"></i><i style="height:58%"></i><i style="height:84%"></i></span><b>Accruals by quarter</b></span><span class="rtile"><span class="bars"><i style="height:70%"></i><i style="height:44%"></i><i style="height:58%"></i><i style="height:36%"></i><i style="height:50%"></i></span><b>Savings by guideline</b></span><span class="rtile"><span class="bars"><i style="height:60%"></i><i style="height:52%"></i><i style="height:40%"></i><i style="height:34%"></i><i style="height:28%"></i></span><b>Invoice cycle time</b></span><span class="rtile"><span class="bars"><i style="height:50%"></i><i style="height:86%"></i><i style="height:42%"></i><i style="height:64%"></i><i style="height:38%"></i></span><b>Matters by type</b></span><span class="rtile"><span class="bars"><i style="height:44%"></i><i style="height:44%"></i><i style="height:62%"></i><i style="height:62%"></i><i style="height:80%"></i></span><b>AP batches</b></span><span class="rtile"><span class="bars"><i style="height:36%"></i><i style="height:58%"></i><i style="height:48%"></i><i style="height:70%"></i><i style="height:60%"></i></span><b>Rate changes</b></span><span class="rtile"><span class="bars"><i style="height:40%"></i><i style="height:72%"></i><i style="height:55%"></i><i style="height:90%"></i><i style="height:62%"></i></span><b>Spend by firm</b></span><span class="rtile"><span class="bars"><i style="height:80%"></i><i style="height:64%"></i><i style="height:70%"></i><i style="height:52%"></i><i style="height:76%"></i></span><b>Budget vs actual</b></span><span class="rtile"><span class="bars"><i style="height:30%"></i><i style="height:48%"></i><i style="height:66%"></i><i style="height:58%"></i><i style="height:84%"></i></span><b>Accruals by quarter</b></span><span class="rtile"><span class="bars"><i style="height:70%"></i><i style="height:44%"></i><i style="height:58%"></i><i style="height:36%"></i><i style="height:50%"></i></span><b>Savings by guideline</b></span><span class="rtile"><span class="bars"><i style="height:60%"></i><i style="height:52%"></i><i style="height:40%"></i><i style="height:34%"></i><i style="height:28%"></i></span><b>Invoice cycle time</b></span><span class="rtile"><span class="bars"><i style="height:50%"></i><i style="height:86%"></i><i style="height:42%"></i><i style="height:64%"></i><i style="height:38%"></i></span><b>Matters by type</b></span><span class="rtile"><span class="bars"><i style="height:44%"></i><i style="height:44%"></i><i style="height:62%"></i><i style="height:62%"></i><i style="height:80%"></i></span><b>AP batches</b></span><span class="rtile"><span class="bars"><i style="height:36%"></i><i style="height:58%"></i><i style="height:48%"></i><i style="height:70%"></i><i style="height:60%"></i></span><b>Rate changes</b></span></div></div>
             <div class="strip" aria-hidden="true">
@@ -312,34 +261,35 @@
       </div>
     </section>
 
-    <section class="section security-preview">
-      <div class="section-intro">
-        <p class="eyebrow">Security by architecture</p>
-        <h2>Legal and financial data deserve controls <span class="tone">beneath the interface.</span></h2>
-        <p>Tenant, matter and firm boundaries are enforced in PostgreSQL row-level security. Material changes enter an append-only audit ledger. Vendor identities use a separate realm, and sensitive actions remain server-side and attributable.</p>
-        <a class="text-link" href="/security.html">Read the security architecture <span aria-hidden="true">→</span></a>
+    <section class="sec-band">
+      <div class="sec-head reveal">
+        <p class="eyebrow eyebrow-light">Security by architecture</p>
+        <h2>Controls <span class="tone">beneath the interface.</span></h2>
       </div>
-      <div class="security-points">
-        <article><span>01</span><h3>Database-enforced isolation</h3><p>Every access path inherits the same tenant, matter and vendor walls.</p></article>
-        <article><span>02</span><h3>Append-only accountability</h3><p>Financial and workflow decisions retain who, what, when and why.</p></article>
-        <article><span>03</span><h3>Human-controlled AI</h3><p>Cited suggestions support professional review; they do not make the decision.</p></article>
+      <div class="sec-grid">
+        <article class="reveal"><span>01</span><h3>Database-enforced walls</h3><p>Tenant, matter and firm isolation in PostgreSQL row-level security.</p></article>
+        <article class="reveal"><span>02</span><h3>Append-only audit</h3><p>Every material decision keeps who, what, when and why.</p></article>
+        <article class="reveal"><span>03</span><h3>Human-controlled AI</h3><p>Cited suggestions. People make the call.</p></article>
       </div>
+      <a class="claim-link light reveal" href="/security.html">Read the security architecture <span aria-hidden="true">→</span></a>
     </section>
 
-    <section class="section sandbox-preview">
-      <div><p class="eyebrow">Hands-on product sandbox</p><h2>Take our e&#8209;billing system <span class="tone">for a test drive.</span></h2></div>
-      <div><p>Explore realistic matters, firms, invoices, budgets and reports using synthetic data. No production data, customer integrations or full implementation project required.</p><a class="btn btn-outline" href="/sandbox.html">Explore sandbox access</a></div>
-      <a class="booklet" href="#contact" aria-label="Request a private walkthrough">
+    <section class="invite">
+      <a class="booklet reveal" href="#contact" aria-label="Request a private walkthrough">
         <span class="bk-cover"><span class="bk-kicker">■ Private preview</span><img src="/brand-mark-light.svg" width="44" height="44" alt="" /></span>
         <span class="bk-body"><span class="bk-title">The eBilling System, by invitation</span><span class="bk-link">Request a walkthrough →</span></span>
       </a>
+      <div class="invite-copy reveal">
+        <p class="eyebrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg> Private preview</p>
+        <h2>See it on <span class="tone">your own matters.</span></h2>
+        <div class="hero-cta"><a class="btn btn-primary" href="#contact">Request a walkthrough</a><a class="btn btn-outline" href="/sandbox.html">Sandbox access</a></div>
+      </div>
     </section>
 
     <section id="contact" class="section contact-section">
-      <div class="contact-copy">
-        <p class="eyebrow">See it in your operating model</p>
-        <h2>Bring us the workflow <span class="tone">that creates the most drag.</span></h2>
-        <p>We will show how the platform handles it from intake through reporting, then help your team explore the product in a sandbox using synthetic data.</p>
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Talk to us</p>
+        <h2>Bring us your <span class="tone">messiest workflow.</span></h2>
         <p class="contact-email">Prefer email?<br /><a href="mailto:hello@theebillingcompany.com">hello@theebillingcompany.com</a></p>
       </div>
       <form class="contact-form" action="https://formsubmit.co/hello@theebillingcompany.com" method="POST">
@@ -385,7 +335,7 @@
   </footer>
   <script>
     (() => {
-      if (!('IntersectionObserver' in window)) return;
+      if (!('IntersectionObserver' in window)) { document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in')); return; }
       const hero = document.querySelector('[data-hero]');
       if (hero) new IntersectionObserver(([e]) => document.body.classList.toggle('on-dark', e.isIntersecting),
         { rootMargin: '0px 0px -88% 0px' }).observe(hero);
@@ -394,6 +344,10 @@
         if (e.isIntersecting) links.forEach((a) => a.classList.toggle('on', a.hash === '#' + e.target.id));
       }), { rootMargin: '-45% 0px -50% 0px' });
       document.querySelectorAll('.chapter').forEach((c) => spy.observe(c));
+      const rev = new IntersectionObserver((entries) => entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); rev.unobserve(e.target); }
+      }), { rootMargin: '0px 0px -12% 0px' });
+      document.querySelectorAll('.reveal').forEach((el) => rev.observe(el));
     })();
   </script>
 </body>
