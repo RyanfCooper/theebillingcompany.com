@@ -1,6 +1,6 @@
 /* The eBilling Company — marketing site, 2026-09 refresh.
    One sans family (Geist) with two-tone headlines, a single gold accent on a
-   deep legal green, hairline structure, and the real product on screen. */
+   deep legal green, hairline structure. The product itself stays behind a private-preview veil. */
 :root {
   --paper: #f7f5ef;
   --paper-2: #efebe1;
@@ -171,7 +171,7 @@ h3 { font-weight: 600; line-height: 1.25; letter-spacing: -0.015em; }
 .proof-list li { display: inline-flex; align-items: center; gap: 0.45rem; }
 .proof-list li::before { content: ''; width: 16px; height: 16px; border-radius: 50%; background: var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.2l2.2 2.2 4.8-4.8' fill='none' stroke='%230d3b30' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/100% no-repeat; }
 
-/* The product stage: a dotted field with the real app in a window frame. */
+/* The product stage: a dotted field with a sealed, abstract preview of the app. */
 .product-stage {
   position: relative;
   max-width: var(--max);
@@ -213,7 +213,6 @@ h3 { font-weight: 600; line-height: 1.25; letter-spacing: -0.015em; }
   border-radius: 6px;
   font: 500 0.72rem/1.4 var(--mono);
 }
-.window img { width: 100%; height: auto; aspect-ratio: 2822 / 1768; object-fit: cover; object-position: top; }
 .float-card {
   position: absolute;
   z-index: 2;
@@ -364,7 +363,7 @@ h3 { font-weight: 600; line-height: 1.25; letter-spacing: -0.015em; }
 .matter-tags { margin-top: auto; padding-top: 2rem; display: flex; flex-wrap: wrap; gap: 0.45rem; }
 .matter-tags span { padding: 0.45rem 0.8rem; color: rgba(255, 255, 255, 0.86); background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 8px; font-size: 0.78rem; }
 .matter-tags span:first-child { color: var(--green); background: var(--gold); border-color: var(--gold); font-weight: 600; }
-/* A real product crop inside a card. */
+/* An abstract, redacted product motif inside a card. */
 .card-shot {
   margin: 1.6rem -2.1rem -2.1rem 0;
   margin-top: auto;
@@ -602,7 +601,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .bento-grid { grid-template-columns: 1fr; }
   .bento-wide { grid-column: auto; }
   .bento { min-height: 0; }
-  .card-shot { margin-right: -1.5rem; margin-bottom: -1.5rem; }
   .sandbox-preview, .assurance-panel, .honesty-note, .sandbox-note { grid-template-columns: 1fr; gap: 1.2rem; }
   .form-row { grid-template-columns: 1fr; }
   .site-foot { grid-template-columns: 1fr; gap: 1.6rem; }
@@ -642,7 +640,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 .bento.spend-card > :not(.card-shot) { grid-column: 1; padding-right: 0; }
 .bento.spend-card .card-shot { grid-column: 2; grid-row: 1 / span 3; margin: 0 0 0 0; padding-top: 0.4rem; align-self: end; }
-.bento.spend-card .card-shot img { border-right: 1px solid var(--line-strong); border-radius: 12px 12px 0 0; }
 .bento.spend-card { padding-right: clamp(1.5rem, 3vw, 2.1rem); }
 .bento.spend-card > p { padding-bottom: clamp(1.5rem, 3vw, 2.1rem); }
 .portal-card, .report-card, .deployment-card { min-height: 330px; }
@@ -663,3 +660,106 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .site-head { flex-wrap: wrap; row-gap: 0.35rem; }
   .site-nav { width: 100%; margin-left: -0.5rem; overflow-x: auto; scrollbar-width: none; }
 }
+
+/* ---- sealed preview: an abstract app skeleton behind frosted glass -------- */
+.sealed { isolation: isolate; }
+.ghost {
+  position: relative;
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  aspect-ratio: 16 / 8.4;
+  min-height: 320px;
+  overflow: hidden;
+  background: var(--card);
+}
+.ghost i, .ghost b, .ghost em, .ghost span { display: block; border-radius: 6px; font-style: normal; }
+.g-rail { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 16px 0; background: #f4f1e9; border-right: 1px solid var(--line); }
+.g-rail b { width: 24px; height: 24px; margin-bottom: 8px; background: var(--green); border-radius: 7px; }
+.g-rail i { width: 18px; height: 18px; background: #e4dfd3; border-radius: 5px; }
+.g-rail i.on { background: var(--gold); }
+.g-main { padding: clamp(18px, 3vw, 34px) clamp(18px, 3.4vw, 40px); display: flex; flex-direction: column; gap: clamp(14px, 2vw, 24px); }
+.g-head { display: flex; align-items: center; gap: 10px; }
+.g-head b { width: 34%; height: 22px; background: #2c3833; }
+.g-head em { width: 70px; height: 26px; margin-left: 0; background: #ece8de; border-radius: 8px; }
+.g-head em:first-of-type { margin-left: auto; }
+.g-head em.gold { width: 104px; background: var(--gold); }
+.g-meta { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+.g-meta span { height: 30px; background: linear-gradient(#d9d4c8, #d9d4c8) 0 0 / 55% 9px no-repeat, linear-gradient(#ebe7dd, #ebe7dd) 0 18px / 85% 9px no-repeat; }
+.g-cols { flex: 1; display: grid; grid-template-columns: 1.65fr 1fr; gap: clamp(14px, 2vw, 24px); }
+.g-list { display: flex; flex-direction: column; gap: 10px; }
+.g-tabs { display: flex; gap: 18px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.g-tabs i { width: 64px; height: 10px; background: #e1dccf; }
+.g-tabs i.on { background: var(--green-3); }
+.g-row { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px; }
+.g-row i { height: 10px; background: #dcd7cb; }
+.g-row em { width: 46px; height: 22px; background: #efebe1; border-radius: 7px; }
+.g-side { display: flex; flex-direction: column; gap: 12px; }
+.g-card { display: flex; flex-direction: column; gap: 12px; padding: 16px; border: 1px solid var(--line); border-radius: 12px; }
+.g-card i { height: 10px; width: 80%; background: #dcd7cb; }
+.g-card i.short { width: 46%; background: #ebe7dd; }
+.g-meter { height: 8px; background: #ebe7dc; border-radius: 99px; overflow: hidden; }
+.g-meter span { width: 38%; height: 100%; background: var(--gold); border-radius: 0; }
+/* A slow gold read-head sweeps the page, like a bill being checked. */
+.g-scan {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 22%;
+  background: linear-gradient(90deg, transparent, rgba(231, 180, 81, 0.28) 55%, rgba(231, 180, 81, 0.55) 60%, transparent 61%);
+  animation: g-scan 7s cubic-bezier(0.6, 0, 0.4, 1) infinite;
+}
+@keyframes g-scan { 0% { transform: translateX(-110%); } 60%, 100% { transform: translateX(560%); } }
+.veil {
+  position: absolute;
+  inset: 38px 0 0 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(255, 254, 250, 0.9), rgba(255, 254, 250, 0.45) 70%, rgba(255, 254, 250, 0.2));
+  -webkit-backdrop-filter: blur(7px) saturate(1.1);
+  backdrop-filter: blur(7px) saturate(1.1);
+}
+.veil-lock { width: 44px; height: 44px; display: grid; place-items: center; color: var(--gold); background: var(--green); border-radius: 12px; box-shadow: var(--shadow-soft); }
+.veil strong { margin-top: 1rem; font: 500 0.74rem/1.4 var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--green-ink); }
+.veil p { max-width: 25rem; margin: 0.5rem 0 1.2rem; color: var(--ink-2); font-size: clamp(1.05rem, 1.6vw, 1.3rem); line-height: 1.4; letter-spacing: -0.01em; }
+@media (max-width: 720px) {
+  .ghost { grid-template-columns: 36px 1fr; min-height: 340px; }
+  .g-meta { grid-template-columns: repeat(3, 1fr); }
+  .g-meta span:nth-child(n+4) { display: none; }
+  .g-cols { grid-template-columns: 1fr; }
+  .g-side { display: none; }
+  .g-head em:not(.gold) { display: none; }
+  .veil { inset: 0; }
+}
+
+/* ---- redacted invoice: the bill, with the specifics blacked out ----------- */
+.rd-sheet {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.3rem 1.4rem 1.6rem;
+  background: var(--card);
+  border: 1px solid var(--line-strong);
+  border-bottom: 0;
+  border-radius: 12px 12px 0 0;
+  box-shadow: var(--shadow-soft);
+  font-size: 0.8rem;
+}
+.rd-sheet .x { display: inline-block; height: 0.8em; vertical-align: -0.05em; background: #1b2420; border-radius: 2px; }
+.rd-head { display: flex; align-items: center; justify-content: space-between; padding-bottom: 0.8rem; border-bottom: 1px solid var(--line); color: var(--muted); font: 500 0.72rem/1 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; }
+.rd-head .x { margin-left: 0.4rem; }
+.rd-pill { padding: 3px 9px; color: #7a4d0b; background: var(--gold-soft); border-radius: 999px; font: 600 0.66rem/1.5 var(--font); letter-spacing: 0; text-transform: none; }
+.rd-line { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.55rem 0.7rem; border-radius: 8px; }
+.rd-line .amt { width: 4.5em; }
+.rd-line.flagged { background: var(--gold-soft); box-shadow: inset 3px 0 0 var(--gold); }
+.rd-flag { color: #7a4d0b; font-weight: 600; }
+.rd-budget { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 1rem; margin-top: 0.3rem; padding-top: 0.9rem; border-top: 1px solid var(--line); color: var(--muted); }
+.rd-meter { position: relative; height: 8px; background: #ebe7dc; border-radius: 99px; }
+.rd-meter i { position: absolute; inset: 0 auto 0 0; width: 52%; background: var(--green-3); border-radius: inherit; }
+.rd-meter em { position: absolute; inset: 0 auto 0 52%; width: 12%; background: var(--gold); border-radius: 0 99px 99px 0; }
+.rd-total { display: flex; align-items: center; justify-content: space-between; color: var(--ink); font-weight: 600; }
+.rd-total .x { height: 1.1em; }
+@media (prefers-reduced-motion: reduce) { .g-scan { animation: none; display: none; } }
