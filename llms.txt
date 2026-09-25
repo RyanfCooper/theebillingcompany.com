@@ -8,14 +8,14 @@
 
 The platform connects the legal operating lifecycle from business request and
 matter creation through outside counsel collaboration, invoice review, budgets,
-accruals, AP handoff, payment status, reconciliation, and reporting. It is
+accruals, AP handoff, payment status, and reporting. It is
 broader than a spend-only point tool because the matter remains the shared
 system of record for both work and financial activity.
 
 ## Platform areas
 
 - Intake and matter management: configurable requests, governed fields and
-  managed lists, pending phase, required closure details, people, tasks, files,
+  managed lists, pending status, required closure details, people, tasks, files,
   favorites, recents, and matter access controls.
 - Outside counsel collaboration: firm and office billing records, separate
   portal identities, client grants, matter updates, timekeepers, rate requests,
@@ -31,7 +31,7 @@ system of record for both work and financial activity.
 - Finance loop: simple purchase-order requests and internal approvals with
   automatic PO numbers; optional accounting decision callbacks; invoice-to-PO
   balances, allocations, AP batches, per-system office billing identities,
-  payment reconciliation, and managed currency rates. Immutable AP export
+  recorded payments, and managed currency rates. Immutable AP export
   snapshots retain delivery attempts and explicit review for uncertain outcomes.
 - Reporting: a self-service cross-object builder with live previews, charts,
   text-to-report assistance, private/role/workspace sharing, scheduled email,
