@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="9" fill="#262218"/>
-  <path d="M23.2 22.6A9.6 9.6 0 1 1 25.6 16" stroke="#FFFDF8" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M7 16h18.6" stroke="#E5BB68" stroke-width="3.4" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" role="img" aria-label="The eBilling Company">
+  <path d="M11 0h18l11 11v18a11 11 0 0 1-11 11H11A11 11 0 0 1 0 29V11A11 11 0 0 1 11 0z" fill="#0D3B30"/>
+  <path d="M29 0v6a5 5 0 0 0 5 5h6z" fill="#E7B451"/>
+  <path d="M28.4 27.8A10.2 10.2 0 1 1 30.4 21" stroke="#F7F1E3" stroke-width="4" stroke-linecap="round"/>
+  <path d="M9.8 21h20.6" stroke="#E7B451" stroke-width="4" stroke-linecap="round"/>
 </svg>

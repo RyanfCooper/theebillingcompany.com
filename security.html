@@ -7,6 +7,7 @@
   <meta name="description" content="Review the security architecture behind The eBilling System, including database-enforced isolation, identity boundaries, auditability, and human-controlled AI." />
   <link rel="canonical" href="https://theebillingcompany.com/security.html" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0d3b32" />
   <meta property="og:type" content="website" />
@@ -18,13 +19,13 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;450;500;600;650;700&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-head">
-    <a class="brand" href="/" aria-label="The eBilling Company home"><span class="brand-mark" aria-hidden="true"><img src="/brand-mark.svg" width="34" height="34" alt=""></span><span>The <strong>eBilling</strong> Company</span></a>
+    <a class="brand" href="/" aria-label="The eBilling Company home"><span class="brand-mark" aria-hidden="true"><img src="/brand-mark.svg" width="32" height="32" alt=""></span><span>The <strong>eBilling</strong> Company</span></a>
     <nav class="site-nav" aria-label="Primary navigation"><a href="/platform.html">Platform</a><a href="/security.html" aria-current="page">Security</a><a href="/sandbox.html">Sandbox</a><a class="btn btn-small btn-outline" href="/#contact">Request a demo</a></nav>
   </header>
 
@@ -32,13 +33,13 @@
     <section class="page-hero security-hero">
       <p class="breadcrumb"><a href="/">Home</a> / Security</p>
       <div class="page-hero-grid">
-        <div><p class="eyebrow">Security by architecture</p><h1>Controls that follow the data.</h1><p class="lede">Legal matters contain privileged, personal, and financially material information. The platform is designed so isolation, identity, and accountability do not depend on a page behaving perfectly.</p><div class="hero-cta"><a class="btn btn-primary" href="/#contact">Discuss your requirements</a></div></div>
+        <div><p class="eyebrow">Security by architecture</p><h1>Controls <span class="tone">that follow the data.</span></h1><p class="lede">Legal matters contain privileged, personal, and financially material information. The platform is designed so isolation, identity, and accountability do not depend on a page behaving perfectly.</p><div class="hero-cta"><a class="btn btn-primary" href="/#contact">Discuss your requirements</a></div></div>
         <aside class="page-summary"><strong>Built into the operating model</strong><p>Security boundaries extend through the application, database, vendor portal, and audit history.</p><ul><li>Database-enforced access boundaries</li><li>Separate vendor identity context</li><li>Attributable workflow decisions</li><li>Human control over assisted analysis</li></ul></aside>
       </div>
     </section>
 
     <section class="section">
-      <div class="section-heading"><p class="eyebrow">Core control areas</p><h2>Defense in depth for a multi-party legal workflow.</h2><p>The strongest control is the one applied consistently across every route, job, export, and portal interaction.</p></div>
+      <div class="section-heading"><p class="eyebrow">Core control areas</p><h2>Defense in depth <span class="tone">for a multi-party legal workflow.</span></h2><p>The strongest control is the one applied consistently across every route, job, export, and portal interaction.</p></div>
       <div class="control-grid">
         <article><span class="control-number">01 · DATA</span><h3>Database-enforced isolation</h3><p>PostgreSQL row-level security carries tenant, matter, and firm boundaries into the data layer. Request context and privileged service paths remain explicit.</p></article>
         <article><span class="control-number">02 · IDENTITY</span><h3>Distinct client and vendor access</h3><p>In-house users and outside counsel operate in separate identity contexts. Access changes invalidate stale sessions. Optional passkeys for local accounts can be enabled during identity setup; corporate sign-in policies remain under the organization’s identity provider.</p></article>
@@ -48,7 +49,7 @@
     </section>
 
     <section class="section subpage-band">
-      <div class="section-heading centered"><p class="eyebrow">A boundary at every layer</p><h2>Identity becomes context. Context constrains the data.</h2></div>
+      <div class="section-heading centered"><p class="eyebrow">A boundary at every layer</p><h2>Identity becomes context. <span class="tone">Context constrains the data.</span></h2></div>
       <div class="architecture-flow" aria-label="Security control flow">
         <div><strong>Identity provider</strong><span>Authenticates the person and audience</span></div>
         <div><strong>Application policy</strong><span>Checks role, action, and workflow state</span></div>
@@ -58,17 +59,17 @@
     </section>
 
     <section class="section">
-      <div class="assurance-panel"><div><p class="eyebrow">Assurance without badge theater</p><h2>We will claim certifications when they are earned.</h2></div><p>The product is not currently represented as SOC 2 certified. As a startup, we are prioritizing customer-relevant controls, evidence collection, and a staged assurance roadmap rather than displaying unearned badges. Prospective customers can request the current control narrative, deployment architecture, and certification roadmap during diligence.</p></div>
+      <div class="assurance-panel"><div><p class="eyebrow">Assurance without badge theater</p><h2>We will claim certifications <span class="tone">when they are earned.</span></h2></div><p>The product is not currently represented as SOC 2 certified. As a startup, we are prioritizing customer-relevant controls, evidence collection, and a staged assurance roadmap rather than displaying unearned badges. Prospective customers can request the current control narrative, deployment architecture, and certification roadmap during diligence.</p></div>
     </section>
 
     <section class="section sandbox-preview">
-      <div><p class="eyebrow">Evaluate with synthetic data</p><h2>Explore the product before connecting your environment.</h2></div>
+      <div><p class="eyebrow">Evaluate with synthetic data</p><h2>Explore the product <span class="tone">before connecting your environment.</span></h2></div>
       <div><p>Sandbox access avoids production data and customer integrations during early evaluation. Your security team can review deployment, identity, residency and assurance requirements separately when the opportunity is ready.</p><a class="btn btn-outline" href="/sandbox.html">Explore the sandbox</a></div>
     </section>
   </main>
 
   <footer class="site-foot">
-    <div><a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><img src="/brand-mark.svg" width="34" height="34" alt=""></span><span>The <strong>eBilling</strong> Company</span></a><p>Matter-first enterprise legal management and e-billing.</p></div>
+    <div><a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><img src="/brand-mark.svg" width="32" height="32" alt=""></span><span>The <strong>eBilling</strong> Company</span></a><p>Matter-first enterprise legal management and e-billing.</p></div>
     <nav aria-label="Footer navigation"><a href="/platform.html">Platform</a><a href="/security.html">Security</a><a href="/sandbox.html">Sandbox</a><a href="mailto:hello@theebillingcompany.com">Contact</a></nav>
     <p class="foot-meta">theebillingcompany.com<br />© 2026 The eBilling Company</p>
   </footer>
