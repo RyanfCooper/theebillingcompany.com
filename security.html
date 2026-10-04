@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Security Architecture | The eBilling Company</title>
-  <meta name="description" content="Review the security architecture behind The eBilling System, including database-enforced isolation, identity boundaries, auditability, and human-controlled AI." />
+  <meta name="description" content="Review the security architecture behind The eBilling System, including strict data boundaries, segregated vendor access, immutable audit trails, and AI that proposes while your team decides." />
   <link rel="canonical" href="https://theebillingcompany.com/security.html" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -33,28 +33,28 @@
     <section class="page-hero security-hero">
       <p class="breadcrumb"><a href="/">Home</a> / Security</p>
       <div class="page-hero-grid">
-        <div><p class="eyebrow">Security by architecture</p><h1>Controls <span class="tone">that follow the data.</span></h1><p class="lede">Legal matters contain privileged, personal, and financially material information. The platform is designed so isolation, identity, and accountability do not depend on a page behaving perfectly.</p><div class="hero-cta"><a class="btn btn-primary" href="/#contact">Discuss your requirements</a></div></div>
-        <aside class="page-summary"><strong>Built into the operating model</strong><p>Security boundaries extend through the application, database, vendor portal, and audit history.</p><ul><li>Database-enforced access boundaries</li><li>Separate vendor identity context</li><li>Attributable workflow decisions</li><li>Human control over assisted analysis</li></ul></aside>
+        <div><p class="eyebrow">Security by architecture</p><h1>Controls <span class="tone">that follow the data.</span></h1><p class="lede">Legal matters involve privileged narratives, sensitive terms, and critical financial data. Our architecture enforces strict boundaries directly at the data layer, ensuring complete isolation across matters, outside counsel, and internal teams without risk of data leakage.</p><div class="hero-cta"><a class="btn btn-primary" href="/#contact">Request Security Overview</a></div></div>
+        <aside class="page-summary"><strong>Security at the core</strong><p>Rigorous isolation enforced across every layer of the platform.</p><ul><li>Strict matter and tenant isolation</li><li>Segregated vendor portal access</li><li>Immutable, unalterable audit trails</li><li>AI proposes. You decide.</li></ul></aside>
       </div>
     </section>
 
     <section class="section">
-      <div class="section-heading"><p class="eyebrow">Core control areas</p><h2>Defense in depth <span class="tone">for a multi-party legal workflow.</span></h2><p>The strongest control is the one applied consistently across every route, job, export, and portal interaction.</p></div>
+      <div class="section-heading"><p class="eyebrow">Core control areas</p><h2>Defense in depth <span class="tone">for a multi-party legal workflow.</span></h2><p>Enterprise protection applied consistently across every active matter, outside vendor portal, document export, and financial approval.</p></div>
       <div class="control-grid">
-        <article><span class="control-number">01 · DATA</span><h3>Database-enforced isolation</h3><p>PostgreSQL row-level security carries tenant, matter, and firm boundaries into the data layer. Request context and privileged service paths remain explicit.</p></article>
-        <article><span class="control-number">02 · IDENTITY</span><h3>Distinct client and vendor access</h3><p>In-house users and outside counsel operate in separate identity contexts. Access changes invalidate stale sessions. Optional passkeys for local accounts can be enabled during identity setup; corporate sign-in policies remain under the organization’s identity provider.</p></article>
-        <article><span class="control-number">03 · ACCOUNTABILITY</span><h3>Append-only audit history</h3><p>Material workflow and financial events retain attributable history so reviewers can reconstruct what changed, who acted and when.</p></article>
-        <article><span class="control-number">04 · FINANCIAL INTEGRITY</span><h3>Deterministic money paths</h3><p>Rates, adjustments, allocations, approvals, and monetary calculations use controlled server-side logic, with amounts stored as exact decimals. Missing exchange rates stay visible, and AP delivery outcomes have an auditable review path.</p></article>
+        <article><span class="control-number">01 · DATA ISOLATION</span><h3>Strict matter and firm boundaries</h3><p>Confidential legal narratives, documents, and rate agreements are isolated directly at the data core. Outside counsel only see the specific matters they are authorized to access, eliminating cross-matter data leakage by design.</p></article>
+        <article><span class="control-number">02 · ACCESS CONTROL</span><h3>Segregated in-house and vendor environments</h3><p>Your in-house team accesses the platform through corporate Single Sign-On (SSO) with enterprise governance policies. Outside firms collaborate through securely restricted vendor portals, keeping legal discussions, internal notes, and peer billing confidential.</p></article>
+        <article><span class="control-number">03 · GOVERNANCE &amp; AUDIT</span><h3>Immutable, tamper-proof audit trails</h3><p>Every rate change, invoice reduction, approval, and workflow status is permanently recorded with user attribution and precise timestamps. Reconstruct complete matter history at a moment’s notice for internal reviews or financial compliance.</p></article>
+        <article><span class="control-number">04 · FINANCIAL INTEGRITY</span><h3>Zero-drift calculation precision</h3><p>Automated fee reductions, rate card enforcement, tax allocations, and multi-currency conversions execute with exact decimal accuracy. Every approved dollar reconciles cleanly before an invoice is exported to accounts payable.</p></article>
       </div>
     </section>
 
     <section class="section subpage-band">
-      <div class="section-heading centered"><p class="eyebrow">A boundary at every layer</p><h2>Identity becomes context. <span class="tone">Context constrains the data.</span></h2></div>
+      <div class="section-heading centered"><p class="eyebrow">Protection at every layer</p><h2>Identity defines access. <span class="tone">Governance protects the matter.</span></h2></div>
       <div class="architecture-flow" aria-label="Security control flow">
-        <div><strong>Identity provider</strong><span>Authenticates the person and audience</span></div>
-        <div><strong>Application policy</strong><span>Checks role, action, and workflow state</span></div>
-        <div><strong>Database policy</strong><span>Enforces tenant, matter, and firm scope</span></div>
-        <div><strong>Audit ledger</strong><span>Records material decisions and changes</span></div>
+        <div><strong>Enterprise identity</strong><span>Authenticates in-house legal teams via corporate SSO and outside counsel through isolated, role-specific accounts.</span></div>
+        <div><strong>Permission checks</strong><span>Evaluates user authority, financial approval thresholds, and current matter status before granting action.</span></div>
+        <div><strong>Matter isolation</strong><span>Hardcoded data boundaries guarantee that outside firms and restricted practice groups only see the specific matters they are authorized to access.</span></div>
+        <div><strong>Immutable audit log</strong><span>Permanently captures every rate adjustment, fee approval, and record change in a tamper-proof history.</span></div>
       </div>
     </section>
 
