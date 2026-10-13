@@ -661,9 +661,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .bento.spend-card > p { align-self: start; }
 .sandbox-preview .tone { color: inherit; }
 .contact-copy h2 { font-size: clamp(2rem, 3.4vw, 2.8rem); }
+/* Phone header: one row. "Company" drops to a second line so System, Security
+   and Sandbox fit beside the brand instead of wrapping below it. */
 @media (max-width: 720px) {
-  .site-head { flex-wrap: wrap; row-gap: 0.35rem; }
-  .site-nav { width: 100%; margin-left: -0.5rem; overflow-x: auto; scrollbar-width: none; }
+  .site-head { flex-wrap: nowrap; gap: 0.5rem; }
+  .site-head .brand { gap: 0.5rem; line-height: 1.08; }
+  .site-head .brand-name > span { display: block; }
+  .site-nav { gap: 0; margin-right: -0.4rem; }
+  .site-nav > a:not(.btn) { padding: 0.4rem 0.4rem; font-size: 0.84rem; }
+}
+@media (max-width: 359px) {
+  .site-head { padding-inline: 0.9rem; }
+  .site-head .brand { font-size: 0.88rem; }
+  .site-nav > a:not(.btn) { padding-inline: 0.25rem; font-size: 0.78rem; }
 }
 
 /* ---- sealed preview: an abstract app skeleton behind frosted glass -------- */
@@ -813,7 +823,9 @@ body::after { right: 20px; }
   background: var(--green);
 }
 .hero-dark .hero-copy { max-width: 62rem; margin: 0 auto; }
-.hero-dark .eyebrow { display: flex; justify-content: center; color: var(--mint); }
+.hero-dark .eyebrow { display: block; color: var(--mint); text-wrap: balance; }
+/* Inline dot: when the eyebrow wraps on a phone it stays beside the first word. */
+.hero-dark .eyebrow::before { display: inline-block; margin-right: 0.55rem; vertical-align: 0.12em; }
 .hero-dark h1 { max-width: 17ch; margin: 0 auto; color: #f3f0e2; font-weight: 500; }
 .hero-dark h1 .tone { color: #93bba8; }
 .hero-dark .lede { margin: 1.6rem auto 0; color: rgba(229, 238, 231, 0.72); }
