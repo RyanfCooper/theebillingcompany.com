@@ -1,18 +1,19 @@
 # The eBilling Company
 
-> The eBilling Company builds The eBilling System, a matter-first enterprise
-> legal management (ELM) and legal e-billing platform for in-house legal
-> departments, with a collaboration portal for outside counsel.
+> The eBilling Company builds The eBilling System, an intelligent eBilling and
+> matter spend management system for in-house legal departments, with a
+> collaboration portal for outside counsel.
 
 ## Positioning
 
-The platform connects the legal operating lifecycle from business request and
+The system connects the legal operating lifecycle from business request and
 matter creation through outside counsel collaboration, invoice review, budgets,
-accruals, AP handoff, payment status, and reporting. It is
+accruals, Accounts Payable handoff, payment status, and reporting. It is
 broader than a spend-only point tool because the matter remains the shared
-system of record for both work and financial activity.
+system of record for both work and financial activity. It is designed to
+replace legacy enterprise legal management (ELM) and e-billing tools.
 
-## Platform areas
+## System areas
 
 - Intake and matter management: configurable requests, governed fields and
   managed lists, pending status, required closure details, people, tasks, files,
@@ -30,8 +31,8 @@ system of record for both work and financial activity.
   accrual collection, and close controls.
 - Finance loop: simple purchase-order requests and internal approvals with
   automatic PO numbers; optional accounting decision callbacks; invoice-to-PO
-  balances, allocations, AP batches, per-system office billing identities,
-  recorded payments, and managed currency rates. Immutable AP export
+  balances, allocations, Accounts Payable batches, per-system office billing
+  identities, recorded payments, and managed currency rates. Immutable export
   snapshots retain delivery attempts and explicit review for uncertain outcomes.
 - Reporting: a self-service cross-object builder with live previews, charts,
   text-to-report assistance, private/role/workspace sharing, scheduled email,
@@ -60,8 +61,10 @@ Deployment and external integration requirements are agreed during evaluation.
 
 ## Product evaluation
 
-Prospective customers can request access to a sandbox populated with synthetic
-matters, firms, invoices, budgets, accruals, and reports. The sandbox supports
+Private preview, by invitation. Prospective customers can request a private
+walkthrough and a dedicated sandbox populated with synthetic matters, firms,
+rate cards, invoices, budgets, accruals, and reports, provisioned under mutual
+NDA. The sandbox supports
 hands-on product evaluation without customer-data migration, production-system
 connections, or a full implementation project. It must not be used for
 privileged, confidential, personal, or production data.
@@ -80,9 +83,9 @@ privileged, confidential, personal, or production data.
 ## Pages
 
 - Home: https://theebillingcompany.com/
-- Platform: https://theebillingcompany.com/platform.html
-- Security: https://theebillingcompany.com/security.html
-- Product sandbox: https://theebillingcompany.com/sandbox.html
+- System: https://theebillingcompany.com/system
+- Security: https://theebillingcompany.com/security
+- Product sandbox: https://theebillingcompany.com/sandbox
 - Contact: hello@theebillingcompany.com
 
 Also reachable through https://ebillingcompany.com/ and
