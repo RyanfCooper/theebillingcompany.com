@@ -1274,3 +1274,7 @@ body::after { right: 20px; }
 
 .chapter-copy p:not(.chapter-kicker) { font-size: 1.05rem; }
 .chapters-intro > p:not(.eyebrow) { max-width: 40rem; margin: 1rem 0 0; color: var(--muted); font-size: 1.1rem; }
+
+/* Chapter facts: the lead words carry the line so the list scans fast. */
+.ch-facts li { color: var(--ink-2); font-weight: 450; }
+.ch-facts li strong { color: var(--ink); font-weight: 650; }
